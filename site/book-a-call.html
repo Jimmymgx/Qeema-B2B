@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a call | Qeematech</title>
+  <meta name="description" content="Leave your details and the Qeematech team will contact you to discuss your next digital project.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500&family=Roboto:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/book.css">
+</head>
+<body class="page-book" data-page="book">
+
+  <div data-include="header"></div>
+
+  <main class="inner inner--book">
+    <!-- full-height ambient glow (same blobs as the Home hero) -->
+    <div class="inner-glow inner-glow--full" aria-hidden="true">
+      <div class="inner-glow__stage">
+        <div class="glow-field glow-field--full"></div>
+        <div class="glow-drift"></div>
+        <span class="inner-glow__vline inner-glow__vline--l"></span>
+        <span class="inner-glow__vline inner-glow__vline--r"></span>
+      </div>
+    </div>
+
+    <section class="page-head page-head--book" aria-labelledby="bookTitle">
+      <nav class="crumb rise-in" aria-label="Breadcrumb" style="--d:.05s">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Book a call</li>
+        </ol>
+      </nav>
+      <h1 class="title rise-in" id="bookTitle" style="--d:.15s">Ready to discuss your <strong>next project</strong></h1>
+      <!-- NOTE: the Figma copy says "Taqa Tech"; confirm the company name before launch. -->
+      <p class="lead rise-in" style="--d:.25s">The Taqa Tech team is ready to listen to your idea and turn it into a professional digital solution. Leave your details, and our team will contact you as soon as possible to discuss the best options for your needs.</p>
+
+      <ul class="contact-trio rise-in" style="--d:.35s">
+        <li><a class="contact-card" href="tel:+201012804721"><img decoding="async" src="assets/svg/contact-call.svg" alt="" width="60" height="60"><span>201012804721+</span></a></li>
+        <li><a class="contact-card" href="mailto:sales@qeematech.net"><img decoding="async" src="assets/svg/contact-mail.svg" alt="" width="60" height="60"><span>sales@qeematech.net</span></a></li>
+        <li><a class="contact-card" href="https://maps.google.com/?q=3+Makram+Ebeid,+Nasr+City,+Cairo" target="_blank" rel="noopener"><img decoding="async" src="assets/svg/contact-location.svg" alt="" width="60" height="60"><span>3 Makram Ebeid, Nasr City, Cairo</span></a></li>
+      </ul>
+    </section>
+
+    <section class="book" aria-labelledby="touchTitle">
+      <span class="pill pill--soft" id="touchTitle" data-reveal>Get in touch</span>
+
+      <form class="book-form" id="bookForm" novalidate data-reveal style="--d:.1s">
+        <div class="book-form__grid">
+          <div class="field">
+            <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder=" " required aria-describedby="firstName-err">
+            <label for="firstName">First Name *</label>
+            <span class="field__line" aria-hidden="true"></span>
+            <p class="field__error" id="firstName-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder=" " required aria-describedby="lastName-err">
+            <label for="lastName">Last Name *</label>
+            <span class="field__line" aria-hidden="true"></span>
+            <p class="field__error" id="lastName-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder=" " required aria-describedby="email-err">
+            <label for="email">Email Address *</label>
+            <span class="field__line" aria-hidden="true"></span>
+            <p class="field__error" id="email-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder=" " aria-describedby="phone-err">
+            <label for="phone">Phone number</label>
+            <span class="field__line" aria-hidden="true"></span>
+            <p class="field__error" id="phone-err" role="alert"></p>
+          </div>
+          <div class="field field--wide">
+            <textarea id="message" name="message" rows="1" placeholder=" "></textarea>
+            <label for="message">Tell us more ...</label>
+            <span class="field__line" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div class="book-form__actions">
+          <button class="btn book-form__submit" type="submit"><span class="btn__label">Submit Form</span><span class="btn__spinner" aria-hidden="true"></span></button>
+        </div>
+      </form>
+
+      <!-- shown after a successful submit (front-end only; connect the form to your backend / WordPress form plugin later) -->
+      <div class="book-success" id="bookSuccess" hidden tabindex="-1">
+        <svg class="book-success__check" width="72" height="72" viewBox="0 0 72 72" fill="none" aria-hidden="true"><circle cx="36" cy="36" r="34" stroke="url(#bg)" stroke-width="3"/><path d="M22 37.5 31.5 47 50 26" stroke="url(#bg)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="bg" x1="0" y1="0" x2="72" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00247E"/><stop offset="1" stop-color="#0C5ADB"/></linearGradient></defs></svg>
+        <h2 class="title">Thank <strong>you!</strong></h2>
+        <p class="lead">We received your details and our team will contact you as soon as possible.</p>
+        <a class="btn" href="index.html">Back to Home</a>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/book.js"></script>
+</body>
+</html>

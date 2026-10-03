@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Book a call
+   ========================================================================== */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes draw { from { stroke-dashoffset: 120; } to { stroke-dashoffset: 0; } }
+
+.inner--book { padding-bottom: 100px; }
+.inner-glow--full { height: 100%; -webkit-mask-image: none; mask-image: none; }
+.inner-glow--full .inner-glow__stage { height: 100%; }
+.inner--book .inner-glow__vline { height: 856px; }
+
+/* head: left-aligned lead, title-case copy as in the design */
+.page-head--book .title, .page-head--book .lead { text-transform: capitalize; }
+.page-head--book .lead { align-self: flex-start; text-align: left; letter-spacing: 0; max-width: 1240px; }
+
+/* phone / email / address */
+.contact-trio { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; width: 100%; margin-top: 24px; }
+.contact-trio li:nth-child(1) { width: 255px; }
+.contact-trio li:nth-child(2) { width: 224px; }
+.contact-trio li:nth-child(3) { width: 426px; }
+.contact-trio li { max-width: 100%; }
+.contact-card {
+  width: 100%;
+  display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 10px; border-radius: 16px;
+  font-size: 20px; line-height: 27px; text-align: center; color: var(--c-ink);
+  transition: transform 0.4s var(--ease-out), background 0.3s, box-shadow 0.4s;
+}
+.contact-card img { transition: transform 0.5s var(--ease-out); }
+.contact-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.55); box-shadow: 0 18px 40px -20px rgba(0, 36, 126, 0.35); }
+.contact-card:hover img { transform: scale(1.1) rotate(-4deg); }
+
+/* form */
+.book { position: relative; z-index: 1; width: min(100% - var(--gutter) * 2, 1280px); margin: 48px auto 0; }
+.book-form { margin-top: 16px; }
+.book-form__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 64px; row-gap: 48px; }
+.field { position: relative; min-height: 64px; }
+.field--wide { grid-column: 1 / -1; margin-top: 16px; }
+.field input, .field textarea {
+  display: block; width: 100%; min-height: 64px; padding: 24px 0 8px; border: 0; border-bottom: 2px solid #666; border-radius: 0;
+  background: transparent; font: inherit; font-size: 20px; line-height: 1.4; color: var(--c-ink); outline: 0; resize: none; overflow: hidden;
+}
+.field textarea { padding-top: 26px; }
+.field label {
+  position: absolute; left: 0; top: 18px; font-size: 20px; line-height: 1.4; color: var(--c-muted); pointer-events: none; transform-origin: left top;
+  transition: transform 0.35s var(--ease-out), color 0.25s;
+}
+.field input:focus + label, .field input:not(:placeholder-shown) + label,
+.field textarea:focus + label, .field textarea:not(:placeholder-shown) + label { transform: translateY(-20px) scale(0.72); color: var(--c-blue); }
+.field__line {
+  position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--grad-brand);
+  transform: scaleX(0); transform-origin: left; transition: transform 0.5s var(--ease-out);
+}
+.field input:focus ~ .field__line, .field textarea:focus ~ .field__line { transform: scaleX(1); }
+.field__error { min-height: 0; margin-top: 8px; font-size: 14px; line-height: 1.3; color: #c62828; opacity: 0; translate: 0 -4px; transition: opacity 0.25s, translate 0.25s; }
+.field.is-invalid input, .field.is-invalid textarea { border-bottom-color: #c62828; }
+.field.is-invalid .field__error { opacity: 1; translate: 0 0; }
+.field.is-invalid label { color: #c62828; }
+.field.is-invalid .field__line { background: #c62828; transform: scaleX(1); }
+
+.book-form__actions { display: flex; justify-content: flex-end; margin-top: 64px; }
+.book-form__submit { min-width: 185px; }
+.btn__spinner { display: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.4); border-top-color: #fff; animation: spin 0.7s linear infinite; }
+.book-form.is-sending .btn__label { display: none; }
+.book-form.is-sending .btn__spinner { display: block; }
+.book-form.is-sending .book-form__submit { pointer-events: none; }
+
+/* success */
+.book-success { display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 40px 0 20px; text-align: center; }
+.book-success[hidden], .book .pill[hidden] { display: none; }
+.book-success:focus, .book-success:focus-visible { outline: 0; }
+.book-success:not([hidden]) { animation: pop 0.7s var(--ease-out) both; }
+.book-success__check circle { stroke-dasharray: 220; animation: draw 0.9s var(--ease-out) both; }
+.book-success__check path { stroke-dasharray: 120; animation: draw 0.7s var(--ease-out) 0.35s both; }
+.book-success .lead { max-width: 640px; letter-spacing: 0.5px; font-size: 20px; }
+
+@media (max-width: 899px) {
+  .page-head--book .lead { font-size: 18px; }
+  .contact-trio { flex-direction: column; align-items: center; gap: 8px; }
+  .contact-trio li:nth-child(n) { width: 100%; }
+  .contact-card { font-size: 18px; }
+  .book { margin-top: 32px; }
+  .book-form__grid { grid-template-columns: 1fr; row-gap: 32px; }
+  .book-form__actions { margin-top: 40px; }
+  .book-form__submit { width: 100%; }
+  .inner--book { padding-bottom: 64px; }
+}

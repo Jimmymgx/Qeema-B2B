@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qeematech | We Create Digital Products</title>
+  <meta name="description" content="Qeematech builds digital products, platforms and experiences that help businesses move forward.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500&family=Roboto:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="page-home" data-page="home">
+
+  <!-- =============== Header =============== -->
+  <div data-include="header"></div>
+
+  <main>
+    <div class="zone">
+      <!-- =============== Hero =============== -->
+      <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero__stage" id="heroStage">
+
+          <!-- ambient glows -->
+          <div class="hero__glows" aria-hidden="true">
+            <div class="glow-field glow-field--full"></div>
+            <div class="glow-drift"></div>
+            <div class="hero__band"></div>
+            <span class="hero__vline hero__vline--l"></span>
+            <span class="hero__vline hero__vline--r"></span>
+          </div>
+
+          <!-- left ticks -->
+          <div class="hero__ticks" aria-hidden="true">
+            <span class="tick tick--blue" style="top:617px;--x:116px"></span>
+            <span class="tick" style="top:633px;--x:98px"></span>
+            <span class="tick" style="top:649px;--x:69px"></span>
+            <span class="tick" style="top:665px;--x:47px"></span>
+          </div>
+
+          <!-- title -->
+          <h1 class="hero__title" id="heroTitle" data-size="h1">
+            <span class="hero__title-line"><span class="rise" style="--d:.1s">We Create</span></span>
+            <span class="hero__title-box rise" style="--d:.28s"><span>Digital Products</span></span>
+          </h1>
+
+          <!-- text formatting toolbar (Figma "Function Bar"): changes the hero title size, style and colour -->
+          <div class="ftool" id="ftool" role="toolbar" aria-label="Hero title formatting" aria-controls="heroTitle">
+            <div class="ftool__wrap">
+              <button type="button" class="ftool__btn ftool__btn--heading" id="ftoolHeading" aria-haspopup="listbox" aria-expanded="false" aria-controls="ftoolSizes">
+                <span id="ftoolHeadingLabel">Heading 1</span>
+                <svg class="ftool__chev" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5.333 6.667 7.529 8.862a.6.6 0 0 0 .942 0l2.196-2.195" stroke="currentColor" stroke-width="1.17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <ul class="ftool__menu" id="ftoolSizes" role="listbox" aria-label="Text size" hidden>
+                <li role="option" tabindex="-1" data-size="h1" aria-selected="true">Heading 1</li>
+                <li role="option" tabindex="-1" data-size="h2" aria-selected="false">Heading 2</li>
+                <li role="option" tabindex="-1" data-size="h3" aria-selected="false">Heading 3</li>
+                <li role="option" tabindex="-1" data-size="p" aria-selected="false">Paragraph</li>
+              </ul>
+            </div>
+            <span class="ftool__div" aria-hidden="true"></span>
+            <button type="button" class="ftool__icon" data-style="bold" aria-pressed="false" aria-label="Bold">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6c0 1.104.895 2 2 2h2.666a2.667 2.667 0 0 0 0-5.334H6A1.333 1.333 0 0 0 4 4.666V6Z" stroke="currentColor" stroke-width="1.17" stroke-linecap="square" stroke-linejoin="round"/><path d="M8.666 8h.667a2.667 2.667 0 0 1 0 5.334H6A1.333 1.333 0 0 1 4 12V8" stroke="currentColor" stroke-width="1.17" stroke-linecap="square" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="ftool__icon" data-style="italic" aria-pressed="false" aria-label="Italic">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6.666 2.666h6M9.667 2.667 6.334 13.333M3.334 13.333h6" stroke="currentColor" stroke-width="1.17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button type="button" class="ftool__icon" data-style="underline" aria-pressed="false" aria-label="Underline">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 14h8M4 2.667V8a4 4 0 0 0 8 0V2.667" stroke="currentColor" stroke-width="1.17" stroke-linecap="round"/></svg>
+            </button>
+            <span class="ftool__div" aria-hidden="true"></span>
+            <div class="ftool__wrap">
+              <button type="button" class="ftool__btn ftool__btn--color" id="ftoolColor" aria-haspopup="true" aria-expanded="false" aria-controls="ftoolSwatches" aria-label="Text colour">
+                <svg class="ftool__a" width="14" height="16" viewBox="0 0 14 16" aria-hidden="true"><path d="M0 16 5.517 0H8.4L14 16h-2.551L8.441 7.087a35 35 0 0 1-.777-2.545A52 52 0 0 1 6.689 1.02h.498a65 65 0 0 1-.965 3.544A56 56 0 0 1 5.486 7.087L2.551 16H0Zm2.997-4.209V9.75h8.006v2.041H2.997Z" fill="currentColor"/><rect class="ftool__a-bar" x="0" y="14.5" width="14" height="1.5" rx=".75"/></svg>
+                <svg class="ftool__chev" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5.333 6.667 7.529 8.862a.6.6 0 0 0 .942 0l2.196-2.195" stroke="currentColor" stroke-width="1.17" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="ftool__swatches" id="ftoolSwatches" role="group" aria-label="Text colour" hidden>
+                <button type="button" style="--c:#1e1e1e" data-color="default" aria-label="Default" class="is-active"></button>
+                <button type="button" style="--c:#00247e" data-color="navy" aria-label="Navy"></button>
+                <button type="button" style="--c:#0c5adb" data-color="blue" aria-label="Blue"></button>
+                <button type="button" style="--c:#00cedc" data-color="cyan" aria-label="Cyan"></button>
+                <button type="button" style="--c:linear-gradient(90deg,#00247e,#0c5adb)" data-color="gradient" aria-label="Brand gradient"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- rings -->
+          <img decoding="async" class="hero__rings" src="assets/svg/hero-rings.svg" alt="" aria-hidden="true">
+
+          <!-- testimonial card fan -->
+          <div class="fan" id="heroFan">
+            <article class="tcard tcard--1" style="--dx:-289.68px;--dy:30.29px;--r:-14deg;--k:1;--i:0">
+              <div class="tcard__float">
+                <div class="tcard__wrap">
+                  <div class="tcard__bg"><img decoding="async" src="assets/img/card-1.webp" alt=""></div>
+                  <div class="tcard__photo"><img fetchpriority="high" decoding="async" class="tcard__photo-img--crop" src="assets/img/card-1.webp" alt="Mountain lake travel poster"></div>
+                  <div class="tcard__body">
+                    <blockquote>“Orionix transformed our brand and website into a powerful growth engine.”</blockquote>
+                    <hr>
+                    <p class="tcard__name">Daniel Carter</p>
+                    <p class="tcard__role">Founder &amp; CEO, NovaTech</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="tcard tcard--2" style="--dx:0px;--dy:0px;--r:0deg;--k:.5;--i:1">
+              <div class="tcard__float">
+                <div class="tcard__wrap">
+                  <div class="tcard__bg"><img decoding="async" src="assets/img/card-2.webp" alt=""></div>
+                  <div class="tcard__photo"><img fetchpriority="high" decoding="async" src="assets/img/card-2.webp" alt="Smartphone on stones"></div>
+                  <div class="tcard__body">
+                    <blockquote>“Their strategy and UI design elevated our entire product experience.”</blockquote>
+                    <hr>
+                    <p class="tcard__name">Ethan Walker</p>
+                    <p class="tcard__role">Product Director, Lumina Labs</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="tcard tcard--3" style="--dx:293.12px;--dy:21.37px;--r:10deg;--k:-1;--i:2">
+              <div class="tcard__float">
+                <div class="tcard__wrap">
+                  <div class="tcard__bg"><img decoding="async" src="assets/img/card-3.webp" alt=""></div>
+                  <div class="tcard__photo"><img fetchpriority="high" decoding="async" src="assets/img/card-3.webp" alt="Phone on rock"></div>
+                  <div class="tcard__body">
+                    <blockquote>“Orionix helped us clarify our brand and launch confidently.”</blockquote>
+                    <hr>
+                    <p class="tcard__name">Marcus Rivera</p>
+                    <p class="tcard__role">Head of Marketing, Horizon Collective</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- statement -->
+          <div class="hero__statement" data-reveal>
+            <p class="hero__big hero__big--1"><span class="hero__dot">.</span>We Shape</p>
+            <p class="hero__big hero__big--2">Bold Ideas</p>
+            <div class="lead-row hero__lead">
+              <p class="lead">Strategy, design and technology come together to create digital experiences that move businesses forward.</p>
+            </div>
+          </div>
+
+          <!-- CTA rows -->
+          <div class="hero__cta hero__cta--1" data-reveal="right"><span class="cta-line"></span><a class="btn" href="book-a-call.html">Order your project</a></div>
+          <div class="hero__cta hero__cta--2" data-reveal="right" style="--d:.15s"><span class="cta-line"></span><a class="btn btn--outline" href="#"><span>Company Profile</span></a></div>
+        </div>
+      </section>
+
+      <!-- =============== Clients =============== -->
+      <section class="clients" id="clients" aria-labelledby="clientsTitle">
+        <div class="clients__inner">
+          <div class="clients__head" data-reveal="left">
+            <span class="pill">Our Clients</span>
+            <h2 class="title" id="clientsTitle">Trusted by <strong>world-<br>leading</strong> enterprises</h2>
+          </div>
+          <div class="clients__logos" aria-label="Client logos" data-reveal="zoom">
+            <div class="marquee marquee--l" style="--speed:38s">
+              <ul class="marquee__track">
+                <li><img decoding="async" src="assets/svg/logo-shutterframe-1.svg" alt="" style="width:179px"></li>
+                <li><img decoding="async" src="assets/svg/logo-convergence.svg" alt="" style="width:174px"></li>
+                <li><img decoding="async" src="assets/svg/logo-w.svg" alt="" style="width:137px"></li>
+              </ul>
+            </div>
+            <div class="marquee marquee--r" style="--speed:44s">
+              <ul class="marquee__track">
+                <li><img decoding="async" src="assets/svg/logo-ikigai.svg" alt="" style="width:164px"></li>
+                <li><img decoding="async" src="assets/svg/logo-coreos.svg" alt="" style="width:121px"></li>
+                <li><img decoding="async" src="assets/svg/logo-shutterframe-2.svg" alt="" style="width:167px"></li>
+              </ul>
+            </div>
+            <div class="marquee marquee--l" style="--speed:50s">
+              <ul class="marquee__track">
+                <li><img decoding="async" src="assets/svg/logo-shutterframe-1.svg" alt="" style="width:179px"></li>
+                <li><img decoding="async" src="assets/svg/logo-layers-a.svg" alt="" style="width:109px"></li>
+                <li><img decoding="async" src="assets/svg/logo-layers-b.svg" alt="" style="width:170px"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- =============== Services =============== -->
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="services__head">
+        <div class="services__head-left" data-reveal="left">
+          <span class="pill pill--grey">Our services</span>
+          <h2 class="title" id="servicesTitle">Services Built <strong>for Growth</strong></h2>
+        </div>
+        <div class="lead-row services__lead" data-reveal="right">
+          <p class="lead">We create end-to-end digital solutions that help businesses build stronger products, improve operations, and grow with confidence.</p>
+        </div>
+      </div>
+
+      <!-- Track = scroll runway. The panel stays pinned while you scroll through the 6 services, then releases. -->
+      <div class="services__track" id="servicesTrack">
+      <div class="services__panel" id="servicesPanel" data-active="0">
+        <div class="wheel">
+          <div class="wheel__ring" aria-hidden="true"></div>
+          <ol class="wheel__list" id="wheelList">
+            <li class="wheel__item" data-i="0"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">01</span></button></li>
+            <li class="wheel__item" data-i="1"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">02</span></button></li>
+            <li class="wheel__item" data-i="2"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">03</span></button></li>
+            <li class="wheel__item" data-i="3"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">04</span></button></li>
+            <li class="wheel__item" data-i="4"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">05</span></button></li>
+            <li class="wheel__item" data-i="5"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">06</span></button></li>
+          </ol>
+        </div>
+
+        <!-- slide copy: 01 is from the Figma design; 02-06 are placeholder copy to edit -->
+        <div class="services__slides" aria-live="polite">
+          <article class="sslide is-active" data-i="0">
+            <h3>Website Design &amp; Development</h3>
+            <p>We design and develop modern, responsive websites that combine strong visual identity with seamless user experiences.</p>
+            <div class="sslide__tags"><span class="tag">UI Design</span><span class="tag">UX Design</span><span class="tag">Corporate Websites</span><span class="tag">Responsive</span></div>
+          </article>
+          <article class="sslide" data-i="1">
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform apps built for performance, polish and growth on iOS and Android.</p>
+            <div class="sslide__tags"><span class="tag">iOS</span><span class="tag">Android</span><span class="tag">Flutter</span><span class="tag">App Store Launch</span></div>
+          </article>
+          <article class="sslide" data-i="2">
+            <h3>E-Commerce Solutions</h3>
+            <p>Fast, conversion-focused online stores with secure payments, smart catalogs and smooth checkout.</p>
+            <div class="sslide__tags"><span class="tag">Online Stores</span><span class="tag">Payments</span><span class="tag">Catalog</span><span class="tag">Conversion</span></div>
+          </article>
+          <article class="sslide" data-i="3">
+            <h3>Custom Software</h3>
+            <p>Tailor-made systems and platforms that streamline operations and scale with your business.</p>
+            <div class="sslide__tags"><span class="tag">Web Platforms</span><span class="tag">Dashboards</span><span class="tag">Integrations</span><span class="tag">APIs</span></div>
+          </article>
+          <article class="sslide" data-i="4">
+            <h3>Branding &amp; Identity</h3>
+            <p>Memorable brand systems, from logo and tone of voice to guidelines that keep every touchpoint consistent.</p>
+            <div class="sslide__tags"><span class="tag">Logo</span><span class="tag">Brand Guidelines</span><span class="tag">Messaging</span><span class="tag">Collateral</span></div>
+          </article>
+          <article class="sslide" data-i="5">
+            <h3>Digital Marketing</h3>
+            <p>Data-driven campaigns, SEO and content that bring the right audience to your product.</p>
+            <div class="sslide__tags"><span class="tag">SEO</span><span class="tag">Social Media</span><span class="tag">Paid Ads</span><span class="tag">Analytics</span></div>
+          </article>
+        </div>
+
+        <div class="services__art" aria-hidden="true">
+          <img decoding="async" id="servicesArt" src="assets/img/service-illustration.webp" alt="">
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- =============== Our Work =============== -->
+    <section class="work" id="work" aria-labelledby="workTitle">
+      <div class="work__head">
+        <span class="pill pill--soft" data-reveal>Our Work</span>
+        <h2 class="title" id="workTitle" data-reveal style="--d:.08s">Projects That Turn Ideas Into <strong>Impact</strong></h2>
+        <p class="lead work__lead" data-reveal style="--d:.16s">A selection of digital products, platforms, and experiences we’ve built for ambitious businesses across different industries.</p>
+        <div class="work__tags" id="workTags" role="group" aria-label="Filter projects" data-reveal style="--d:.24s">
+          <button type="button" class="tag" data-filter="mobile">Mobile Applications</button>
+          <button type="button" class="tag" data-filter="corporate">Corporate Websites</button>
+          <button type="button" class="tag" data-filter="ecommerce">E-Commerce</button>
+          <button type="button" class="tag" data-filter="travel">Travel Websites</button>
+          <button type="button" class="tag" data-filter="education">Educational Websites</button>
+          <button type="button" class="tag" data-filter="custom">Custom Software</button>
+        </div>
+      </div>
+
+      <div class="work__grid" id="workGrid">
+        <!-- Titles/descriptions are the Figma placeholders. data-cat is demo data for the filter chips. -->
+        <article class="pcard" data-cat="corporate travel" data-reveal>
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="mobile custom" data-reveal style="--d:.1s">
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot1.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="ecommerce corporate" data-reveal style="--d:.2s">
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot2.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="education travel" data-reveal>
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="custom education" data-reveal style="--d:.1s">
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot1.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="mobile ecommerce" data-reveal style="--d:.2s">
+          <a class="pcard__shot" href="#"><img decoding="async" src="assets/img/project-screenshot2.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3>
+          <p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="#"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+      </div>
+      <a class="btn work__more" href="our-work.html" data-reveal>See More</a>
+    </section>
+
+    <!-- =============== Testimonials =============== -->
+    <section class="testi" id="testimonials" aria-labelledby="testiTitle">
+      <div class="testi__bg" aria-hidden="true">
+        <img decoding="async" class="testi__blob" src="assets/svg/testimonial-blob.svg" alt="">
+        <img decoding="async" class="testi__comma" src="assets/svg/comma.svg" alt="">
+      </div>
+      <div class="testi__inner">
+        <div class="testi__head" data-reveal>
+          <span class="pill pill--grey">Testimonios</span>
+          <h2 class="title" id="testiTitle">We give your project a <strong>stronger foundation</strong> for success</h2>
+        </div>
+
+        <div class="testi__stage" id="testiStage" data-active="0">
+          <!-- Slide 1 is from the Figma design; slides 2-4 are placeholder content. -->
+          <article class="tslide is-active" data-i="0">
+            <div class="tslide__photo"><img decoding="async" src="assets/img/testimonial-heba.webp" alt="Heba Yasser" loading="lazy"><span class="tslide__play" aria-hidden="true"><img decoding="async" src="assets/svg/play.svg" alt=""></span></div>
+            <div class="tslide__text">
+              <div class="tslide__card">
+                <div><h3>Heba Yasser</h3><p class="tslide__project">Project name</p></div>
+                <p class="tslide__quote">one of the best detecated and proffisional team i've worked with, in last hallwoen campaign they deliver to us B.Tech the campaign in short notice with great quality and no delays I really appreciate the commitment to deadlines, high quality and their followup is just amazing<br>highly recommended</p>
+              </div>
+              <div class="tslide__stars" role="img" aria-label="5 star rating"><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""></div>
+            </div>
+          </article>
+          <article class="tslide" data-i="1" data-placeholder>
+            <div class="tslide__photo"><img decoding="async" src="assets/img/testimonial-heba.webp" alt="" loading="lazy"><span class="tslide__play" aria-hidden="true"><img decoding="async" src="assets/svg/play.svg" alt=""></span></div>
+            <div class="tslide__text">
+              <div class="tslide__card">
+                <div><h3>Client Name</h3><p class="tslide__project">Project name</p></div>
+                <p class="tslide__quote">Placeholder testimonial. Replace with a real client quote about the quality, communication and delivery of the project.</p>
+              </div>
+              <div class="tslide__stars" role="img" aria-label="5 star rating"><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""></div>
+            </div>
+          </article>
+          <article class="tslide" data-i="2" data-placeholder>
+            <div class="tslide__photo"><img decoding="async" src="assets/img/testimonial-heba.webp" alt="" loading="lazy"><span class="tslide__play" aria-hidden="true"><img decoding="async" src="assets/svg/play.svg" alt=""></span></div>
+            <div class="tslide__text">
+              <div class="tslide__card">
+                <div><h3>Client Name</h3><p class="tslide__project">Project name</p></div>
+                <p class="tslide__quote">Placeholder testimonial. Replace with a real client quote about the quality, communication and delivery of the project.</p>
+              </div>
+              <div class="tslide__stars" role="img" aria-label="5 star rating"><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""></div>
+            </div>
+          </article>
+          <article class="tslide" data-i="3" data-placeholder>
+            <div class="tslide__photo"><img decoding="async" src="assets/img/testimonial-heba.webp" alt="" loading="lazy"><span class="tslide__play" aria-hidden="true"><img decoding="async" src="assets/svg/play.svg" alt=""></span></div>
+            <div class="tslide__text">
+              <div class="tslide__card">
+                <div><h3>Client Name</h3><p class="tslide__project">Project name</p></div>
+                <p class="tslide__quote">Placeholder testimonial. Replace with a real client quote about the quality, communication and delivery of the project.</p>
+              </div>
+              <div class="tslide__stars" role="img" aria-label="5 star rating"><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""><img decoding="async" src="assets/svg/icon.svg" alt=""></div>
+            </div>
+          </article>
+
+          <div class="testi__nav">
+            <button type="button" class="testi__arrow testi__arrow--up" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 5-5 5 5"/></svg></button>
+            <div class="testi__dots" id="testiDots" role="tablist" aria-label="Testimonials">
+              <button type="button" role="tab" aria-selected="true" aria-label="Testimonial 1" class="is-active"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+              <button type="button" role="tab" aria-selected="false" aria-label="Testimonial 4"></button>
+            </div>
+            <button type="button" class="testi__arrow testi__arrow--down" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============== Footer =============== -->
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

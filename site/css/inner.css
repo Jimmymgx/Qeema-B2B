@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Inner pages (Our Work, About, Book a call, project details):
+   shared page head, breadcrumb, glow background, pagination.
+   ========================================================================== */
+@keyframes riseIn { from { opacity: 0; translate: 0 26px; } to { opacity: 1; translate: 0 0; } }
+
+/* overflow: clip (not hidden) so position: sticky inside the page (pinned services) keeps working */
+.inner { position: relative; overflow: hidden; overflow: clip; }
+.rise-in { animation: riseIn 0.9s var(--ease-out) both; animation-delay: var(--d, 0s); }
+
+/* glow */
+.inner-glow {
+  position: absolute; inset: 0 0 auto 0; height: 900px; overflow: hidden; pointer-events: none; z-index: 0;
+  -webkit-mask-image: linear-gradient(#000 45%, transparent 100%); mask-image: linear-gradient(#000 45%, transparent 100%);
+}
+.inner-glow__stage { position: absolute; left: 50%; top: 0; width: 1440px; height: 100%; margin-left: -720px; }
+.inner-glow__vline { position: absolute; top: 0; width: 1px; height: 460px; background: linear-gradient(to bottom, rgba(255, 255, 255, 0.55) 70%, rgba(255, 255, 255, 0)); }
+.inner-glow__vline--l { left: 342px; }
+.inner-glow__vline--r { left: 1356px; }
+
+/* page head: left-aligned crumb + title, centred lead and chips */
+.page-head {
+  position: relative; z-index: 1;
+  width: min(100% - var(--gutter) * 2, 1240px); margin-inline: auto; padding-top: 139px;
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.page-head .title { margin-top: 20px; }
+.page-head .lead { margin-top: 20px; align-self: center; text-align: center; max-width: 1200px; }
+.page-head .work__tags { align-self: center; justify-content: center; margin-top: 24px; }
+.page-head .work__tags .tag { background: rgba(255, 255, 255, 0.55); border-color: rgba(255, 255, 255, 0.75); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.page-head .work__tags button.tag:hover { background: #fff; }
+.page-head .work__tags button.tag.is-active { background: var(--grad-brand); border-color: transparent; color: #fff; }
+
+/* breadcrumb pill: ● HOME › OUR WORK */
+.crumb ol { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 16px 0 14px; border-radius: 999px; background: rgba(233, 233, 233, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.crumb ol::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--c-blue); box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2); margin-right: 2px; }
+.crumb li { font-size: 16px; line-height: 16px; letter-spacing: 0.36px; text-transform: uppercase; color: var(--c-muted); }
+.crumb li a { transition: color var(--t-fast); }
+.crumb li a:hover { color: var(--c-blue); }
+.crumb li + li { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: var(--c-ink); }
+.crumb li + li::before { content: ""; width: 7px; height: 7px; border-right: 1.5px solid #8a8a8a; border-top: 1.5px solid #8a8a8a; transform: rotate(45deg); margin-right: 4px; }
+
+/* archive */
+.archive { position: relative; z-index: 1; padding: 30px var(--gutter) 96px; }
+.archive__grid { margin-top: 0; row-gap: 32px; transition: opacity 0.25s; }
+.archive__grid.is-swapping { opacity: 0; }
+.archive__empty { text-align: center; padding: 80px 0; font-size: 20px; color: var(--c-muted); }
+
+/* pagination */
+.pager { display: flex; align-items: center; justify-content: center; gap: 48px; margin-top: 40px; }
+.pager__list { display: flex; gap: 8px; }
+.pager__list button, .pager__list span {
+  display: grid; place-items: center; min-width: 32px; height: 32px; padding: 0 6px; border-radius: 8px;
+  font-size: 16px; color: #9aa3b5; background: rgba(12, 90, 219, 0.05);
+  transition: background var(--t-fast), color var(--t-fast), transform var(--t-fast) var(--ease-out);
+}
+.pager__list button:hover { background: rgba(12, 90, 219, 0.12); color: var(--c-blue); transform: translateY(-1px); }
+.pager__list button[aria-current="page"] { color: var(--c-ink); font-weight: 500; background: rgba(12, 90, 219, 0.1); }
+.pager__list span { background: rgba(12, 90, 219, 0.03); }
+.pager__arrow {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(12, 90, 219, 0.06); color: var(--c-navy); transition: all var(--t-fast) var(--ease-out);
+}
+.pager__arrow:hover:not(:disabled) { background: var(--grad-brand); color: #fff; transform: scale(1.1); }
+.pager__arrow:disabled { color: #aab2c4; cursor: default; opacity: 0.8; }
+
+@media (max-width: 1100px) {
+  .page-head .lead { font-size: 20px; }
+  .work__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 899px) {
+  .title { font-size: clamp(34px, 9vw, 48px); line-height: 1.12; }
+  .work__grid { grid-template-columns: 1fr; }
+  .pcard h3 { font-size: 20px; }
+  .js [data-reveal="left"], .js [data-reveal="right"] { translate: 0 36px; }
+  .page-head { padding-top: 112px; }
+  .page-head .lead { font-size: 18px; letter-spacing: 1px; }
+  .archive { padding-bottom: 64px; }
+  .pager { gap: 20px; }
+  .inner-glow__vline { display: none; }
+}
+
+.page-head--stub { min-height: 640px; }
+.page-head--stub .lead { align-self: flex-start; text-align: left; }

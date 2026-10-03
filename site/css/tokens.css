@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Qeematech B2B — design tokens (from Figma file sRHXgiKChvkcDweVClfAD2)
+   Change values here and every page follows.
+   ========================================================================== */
+:root {
+  /* Color */
+  --c-ink: #1e1e1e;
+  --c-ink-strong: #171717;
+  --c-muted: #717171;
+  --c-muted-2: #585858;
+  --c-soft: #a4a4a4;
+  --c-border: #dddddd;
+  --c-surface: #ffffff;
+  --c-surface-2: #e9e9e9;
+  --c-navy: #00247e;
+  --c-blue: #0c5adb;
+  --c-cyan: #00cedc;
+  --c-sky: #00c2ff;
+  --c-star: #ff9a2e;
+  --grad-brand: linear-gradient(90deg, var(--c-navy), var(--c-blue));
+
+  /* Typography */
+  --f-sans: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-serif: "Fraunces", Georgia, serif;
+  --f-ui: "Inter", var(--f-sans);
+
+  /* Radius & shadow */
+  --r-pill: 100px;
+  --r-card: 8px;
+  --sh-btn: 0 12px 24px -6px rgba(0, 36, 126, 0.3);
+  --sh-pill: 0 24px 40px -16px rgba(0, 0, 0, 0.08);
+  --sh-card: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06),
+    0 4px 6px rgba(0, 0, 0, 0.04), 0 40px 40px -24px rgba(0, 0, 0, 0.06);
+
+  /* Layout */
+  --w-container: 1280px;
+  --gutter: 80px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 0.2s;
+  --t-base: 0.5s;
+  --t-slow: 0.9s;
+}
+
+@media (max-width: 1100px) {
+  :root { --gutter: 40px; }
+}
+@media (max-width: 640px) {
+  :root { --gutter: 20px; }
+}

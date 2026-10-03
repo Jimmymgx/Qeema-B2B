@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Work | Qeematech</title>
+  <meta name="description" content="A selection of digital products, platforms and experiences Qeematech has built for ambitious businesses.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500&family=Roboto:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/inner.css">
+</head>
+<body class="page-work" data-page="work">
+
+  <div data-include="header"></div>
+
+  <main class="inner">
+    <!-- ambient glow behind the page head (same look as the Home hero) -->
+    <div class="inner-glow" aria-hidden="true">
+      <div class="inner-glow__stage">
+        <div class="glow-field glow-field--top"></div>
+        <div class="glow-drift" style="top:-1058px"></div>
+        <span class="inner-glow__vline inner-glow__vline--l"></span>
+        <span class="inner-glow__vline inner-glow__vline--r"></span>
+      </div>
+    </div>
+
+    <section class="page-head" aria-labelledby="workTitle">
+      <nav class="crumb rise-in" aria-label="Breadcrumb" style="--d:.05s">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Our Work</li>
+        </ol>
+      </nav>
+      <h1 class="title rise-in" id="workTitle" style="--d:.15s">Projects That Turn Ideas Into <strong>Impact</strong></h1>
+      <p class="lead rise-in" style="--d:.25s">A selection of digital products, platforms, and experiences we’ve built for ambitious businesses across different industries.</p>
+      <div class="work__tags rise-in" id="workTags" role="group" aria-label="Filter projects" style="--d:.35s">
+        <button type="button" class="tag" data-filter="mobile">Mobile Applications</button>
+        <button type="button" class="tag" data-filter="corporate">Corporate Websites</button>
+        <button type="button" class="tag" data-filter="ecommerce">E-Commerce</button>
+        <button type="button" class="tag" data-filter="travel">Travel Websites</button>
+        <button type="button" class="tag" data-filter="education">Educational Websites</button>
+        <button type="button" class="tag" data-filter="custom">Custom Software</button>
+      </div>
+    </section>
+
+    <section class="archive" aria-label="Projects">
+      <!-- cards are rendered by js/our-work.js (12 per page) -->
+      <div class="work__grid archive__grid" id="workGrid" aria-live="polite"></div>
+      <p class="archive__empty" id="workEmpty" hidden>No projects match this filter yet.</p>
+
+      <nav class="pager" id="pager" aria-label="Pagination">
+        <button type="button" class="pager__arrow" id="pgPrev" aria-label="Previous page">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3m0 0 4-4M3 8l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <ol class="pager__list" id="pgList"></ol>
+        <button type="button" class="pager__arrow" id="pgNext" aria-label="Next page">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/our-work.js"></script>
+</body>
+</html>

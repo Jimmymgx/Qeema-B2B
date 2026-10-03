@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kingo | Our Work | Qeematech</title>
+  <meta name="description" content="Kingo: a fresh-meat shopping app designed and built by Qeematech.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500;800&family=Roboto:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<!-- Two hero variants exist in the design: phone (default) and laptop. Use project.html?device=laptop for the laptop one. -->
+<body class="page-project" data-page="work">
+
+  <div data-include="header"></div>
+
+  <main class="proj">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><clipPath id="phoneScreenClip" clipPathUnits="objectBoundingBox"><path transform="scale(0.002748 0.001212)" d="M51.1435 0.135038C44.7229 0.340039 38.6769 0.994539 34.1464 1.97454C20.8828 4.84405 10.5929 13.0498 5.22158 25.0408C2.749 30.5606 1.45032 35.927 0.499991 44.552C0.140664 47.8123 0.102728 76.8086 0.0244679 408.719C-0.0361356 665.452 0.0137311 770.852 0.197689 774.582C0.779149 786.357 2.53188 794.617 5.84933 801.217C12.4508 814.349 23.7868 821.859 40.1681 823.952C46.8397 824.804 47.0903 824.807 175.81 824.902C305.091 824.999 314.988 824.937 322.308 824.094C335.135 822.599 343.429 818.844 350.721 811.229C357.895 803.734 361.512 795.019 362.975 781.699C363.18 779.832 363.454 775.387 363.581 771.824C363.898 763.004 363.901 61.9828 363.583 53.166C363.335 46.2853 362.93 41.7535 362.166 37.3383C358.895 18.4113 346.934 5.62605 328.989 1.86829C321.104 0.217038 313.817 -0.0829617 284.014 0.0172883L261.108 0.0942883L260.113 0.651039C259.567 0.957289 258.894 1.54154 258.618 1.94904C257.582 3.4718 257.389 4.41255 257.148 9.0563C256.895 13.9498 256.513 16.3838 255.592 18.9538C253.402 25.0651 247.943 30.2315 241.854 31.9578C240.895 32.229 239 32.5678 237.641 32.7103C234.073 33.0843 129.205 33.0663 125.893 32.6913C118.566 31.861 113.031 28.2613 109.495 22.025C107.57 18.629 106.761 15.0305 106.505 8.7193C106.291 3.46305 105.705 1.93929 103.396 0.633789L102.442 0.0942883L77.8663 0.0802883C64.3498 0.0727883 52.3246 0.0972883 51.1435 0.135038Z"/></clipPath></defs></svg>
+    <!-- silky background: base colour + four stacked images, as in the design -->
+    <div class="proj-bg" aria-hidden="true">
+      <img decoding="async" src="assets/img/proj-bg-b.jpg" alt="" class="flip" style="top:2644px">
+      <img decoding="async" src="assets/img/proj-bg-b.jpg" alt="" class="flip" style="top:859px">
+      <img decoding="async" src="assets/img/proj-bg-a.jpg" alt="" style="top:1760px">
+      <img decoding="async" src="assets/img/proj-bg-c.jpg" alt="" style="top:0">
+    </div>
+
+    <!-- =============== Hero =============== -->
+    <section class="proj-hero" aria-labelledby="projTitle">
+      <div class="proj-hero__stage">
+        <nav class="crumb rise-in" aria-label="Breadcrumb" style="--d:.05s">
+          <ol>
+            <li><a href="our-work.html">Our Work</a></li>
+            <li aria-current="page">Project name</li>
+          </ol>
+        </nav>
+
+        <h1 class="proj-hero__brand" id="projTitle">
+          <span class="proj-hero__name rise-in" style="--d:.15s"><b>.</b>Kingo</span>
+          <span class="proj-hero__tag rise-in" style="--d:.3s">Bold Ideas</span>
+        </h1>
+
+        <!-- phone mockup (default) -->
+        <div class="device device--phone rise-in" id="devicePhone" style="--d:.2s">
+          <div class="device__float">
+            <img decoding="async" class="device__frame" src="assets/img/phone-mockup.png" alt="" width="216" height="459">
+            <img decoding="async" class="device__screen" src="assets/img/phone-screen.jpg" alt="Kingo app screen showing a list of PVC pipes" width="194" height="438">
+          </div>
+        </div>
+
+        <!-- laptop mockup (variant) -->
+        <div class="device device--laptop rise-in" id="deviceLaptop" style="--d:.2s" hidden>
+          <div class="device__float">
+            <img decoding="async" class="device__screen" src="assets/img/laptop-screen.jpg" alt="Kingo website on a laptop screen" width="436" height="271">
+            <img decoding="async" class="device__frame" src="assets/img/laptop-mockup.webp" alt="" width="612" height="612">
+          </div>
+        </div>
+
+        <div class="proj-cta proj-cta--quote" data-reveal="right"><a class="btn" href="book-a-call.html">Request a Quote</a><span class="proj-cta__line"></span></div>
+        <div class="proj-cta proj-cta--view" data-reveal="right" style="--d:.15s"><a class="btn btn--outline" href="#"><span>View Project</span></a><span class="proj-cta__line"></span></div>
+      </div>
+    </section>
+
+    <!-- =============== Overview =============== -->
+    <!-- Project copy is placeholder text from the design ("Jazarti" / "Qima Tech" names are as written in Figma, confirm before launch). -->
+    <section class="proj-overview" aria-label="Project overview">
+      <div class="lead-row proj-overview__lead" data-reveal>
+        <div class="proj-overview__copy">
+          <p>The Jazarti app is designed to transform the fresh meat shopping experience, making it easier and more convenient than ever before. The project idea was to provide a digital platform that enables customers to browse different types of meat and select the cuts that precisely meet their needs, with the option to place orders and receive them on the same day.</p>
+          <p>The goal was not just to sell products online but to offer a comprehensive experience that gives customers confidence in product quality, ease of ordering, and fast delivery, along with secure payment methods and real-time order tracking services.</p>
+        </div>
+      </div>
+
+      <h2 class="proj-overview__title" data-reveal>Main Focus / Mission Statement</h2>
+      <ol class="proj-steps">
+        <li class="proj-step" data-reveal>
+          <span class="proj-step__num" aria-hidden="true">1</span>
+          <div><h3>The Challenge</h3><p>The biggest challenge we faced was developing an app that clearly displays meat products to help customers choose the right cuts, while providing a fast ordering experience that includes secure payment, quick delivery, and continuous order tracking.</p></div>
+        </li>
+        <li class="proj-step" data-reveal style="--d:.12s">
+          <span class="proj-step__num" aria-hidden="true">2</span>
+          <div><h3>Implementation Mechanism</h3><p>The Qima Tech team is developing a specialised e-commerce application for selling meat, with products organised into clear categories, providing secure electronic ordering and payment methods, in addition to a comprehensive system for managing orders and tracking delivery operations.</p></div>
+        </li>
+        <li class="proj-step" data-reveal style="--d:.24s">
+          <span class="proj-step__num" aria-hidden="true">3</span>
+          <div><h3>Customer journey with us</h3><p>The project management collaborated with the Qima Tech team to transition the traditional meat purchasing experience to a modern digital platform. By studying market needs and customer requirements, an application was developed that facilitates easy ordering and enhances the efficiency of sales and delivery operations.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- =============== More work =============== -->
+    <section class="proj-more" aria-labelledby="moreTitle">
+      <div class="work__head">
+        <span class="pill pill--soft" data-reveal>Our Work</span>
+        <h2 class="title" id="moreTitle" data-reveal style="--d:.08s">Projects That Turn Ideas Into <strong>Impact</strong></h2>
+        <p class="lead work__lead" data-reveal style="--d:.16s">A selection of digital products, platforms, and experiences we’ve built for ambitious businesses across different industries.</p>
+        <div class="work__tags" id="workTags" role="group" aria-label="Filter projects" data-reveal style="--d:.24s">
+          <button type="button" class="tag" data-filter="mobile">Mobile Applications</button>
+          <button type="button" class="tag" data-filter="corporate">Corporate Websites</button>
+          <button type="button" class="tag" data-filter="ecommerce">E-Commerce</button>
+          <button type="button" class="tag" data-filter="travel">Travel Websites</button>
+          <button type="button" class="tag" data-filter="education">Educational Websites</button>
+          <button type="button" class="tag" data-filter="custom">Custom Software</button>
+        </div>
+      </div>
+
+      <div class="work__grid" id="workGrid">
+        <article class="pcard" data-cat="corporate travel" data-reveal>
+          <a class="pcard__shot" href="project.html"><img decoding="async" src="assets/img/project-screenshot.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="mobile custom" data-reveal style="--d:.1s">
+          <a class="pcard__shot" href="project.html?device=laptop"><img decoding="async" src="assets/img/project-screenshot1.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html?device=laptop"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="ecommerce corporate" data-reveal style="--d:.2s">
+          <a class="pcard__shot" href="project.html"><img decoding="async" src="assets/img/project-screenshot2.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="education travel" data-reveal>
+          <a class="pcard__shot" href="project.html?device=laptop"><img decoding="async" src="assets/img/project-screenshot.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html?device=laptop"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="custom education" data-reveal style="--d:.1s">
+          <a class="pcard__shot" href="project.html"><img decoding="async" src="assets/img/project-screenshot1.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-cat="mobile ecommerce" data-reveal style="--d:.2s">
+          <a class="pcard__shot" href="project.html?device=laptop"><img decoding="async" src="assets/img/project-screenshot2.webp" alt="" loading="lazy"></a>
+          <h3>Rivermark</h3><p>High-Performance Websites And Platforms Built To Deliver Seamless Digital Experiences.</p>
+          <a class="pcard__link" href="project.html?device=laptop"><span>View Nominees</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+      </div>
+      <a class="btn work__more" href="our-work.html" data-reveal>See More</a>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>

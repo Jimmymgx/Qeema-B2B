@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Qeematech</title>
+  <meta name="description" content="Qeematech is one of the leading entities in the development and design of websites in Egypt and the Arab world.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500&family=Roboto:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body class="page-about" data-page="about">
+
+  <div data-include="header"></div>
+
+  <main class="inner inner--about">
+    <div class="inner-glow inner-glow--tall" aria-hidden="true">
+      <div class="inner-glow__stage">
+        <div class="glow-field glow-field--full"></div>
+        <div class="glow-drift"></div>
+        <span class="inner-glow__vline inner-glow__vline--l"></span>
+        <span class="inner-glow__vline inner-glow__vline--r"></span>
+      </div>
+    </div>
+
+    <!-- =============== Hero =============== -->
+    <section class="about-hero" aria-labelledby="aboutTitle">
+      <h1 class="about-hero__title rise-in" id="aboutTitle" style="--d:.05s">About Us</h1>
+      <p class="about-hero__box rise-in" style="--d:.2s"><span>Get to know us up close</span></p>
+
+      <div class="about-hero__cols rise-in" style="--d:.35s">
+        <!-- the left column is right-to-left in the design (Arabic copy goes here); same English text for now -->
+        <p class="about-hero__p about-hero__p--rtl" dir="rtl">Our company is one of the leading entities in the development and design of websites in Egypt and the Arab world. We also have strong expertise in digital marketing, web hosting, Android and iPhone app development, as well as implementing systems, control panels, and integrated ERP solutions.</p>
+        <span class="about-hero__divider" aria-hidden="true"></span>
+        <p class="about-hero__p">Our company is one of the leading entities in the development and design of websites in Egypt and the Arab world. We also have strong expertise in digital marketing, web hosting, Android and iPhone app development, as well as implementing systems, control panels, and integrated ERP solutions.</p>
+      </div>
+
+      <ul class="about-hero__photos">
+        <li data-reveal><img decoding="async" src="assets/img/about-office-1.jpg" alt="Qeematech office"></li>
+        <li data-reveal style="--d:.1s"><img decoding="async" src="assets/img/about-office-2.jpg" alt="Team working at their desks"></li>
+        <li data-reveal style="--d:.2s"><img decoding="async" src="assets/img/about-office-3.jpg" alt="Team monitoring dashboards"></li>
+        <li data-reveal style="--d:.3s"><img decoding="async" src="assets/img/about-office-1.jpg" alt="Qeematech office"></li>
+      </ul>
+    </section>
+
+    <!-- =============== Services =============== -->
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="services__head">
+        <div class="services__head-left" data-reveal="left">
+          <span class="pill pill--grey">Our services</span>
+          <h2 class="title" id="servicesTitle">Services Built <strong>for Growth</strong></h2>
+        </div>
+        <div class="lead-row services__lead" data-reveal="right">
+          <p class="lead">We create end-to-end digital solutions that help businesses build stronger products, improve operations, and grow with confidence.</p>
+        </div>
+      </div>
+
+      <!-- Track = scroll runway. The panel stays pinned while you scroll through the 6 services, then releases. -->
+      <div class="services__track" id="servicesTrack">
+      <div class="services__panel" id="servicesPanel" data-active="0">
+        <div class="wheel">
+          <div class="wheel__ring" aria-hidden="true"></div>
+          <ol class="wheel__list" id="wheelList">
+            <li class="wheel__item" data-i="0"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">01</span></button></li>
+            <li class="wheel__item" data-i="1"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">02</span></button></li>
+            <li class="wheel__item" data-i="2"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">03</span></button></li>
+            <li class="wheel__item" data-i="3"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">04</span></button></li>
+            <li class="wheel__item" data-i="4"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">05</span></button></li>
+            <li class="wheel__item" data-i="5"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">06</span></button></li>
+          </ol>
+        </div>
+
+        <!-- slide copy: 01 is from the Figma design; 02-06 are placeholder copy to edit -->
+        <div class="services__slides" aria-live="polite">
+          <article class="sslide is-active" data-i="0">
+            <h3>Website Design &amp; Development</h3>
+            <p>We design and develop modern, responsive websites that combine strong visual identity with seamless user experiences.</p>
+            <div class="sslide__tags"><span class="tag">UI Design</span><span class="tag">UX Design</span><span class="tag">Corporate Websites</span><span class="tag">Responsive</span></div>
+          </article>
+          <article class="sslide" data-i="1">
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform apps built for performance, polish and growth on iOS and Android.</p>
+            <div class="sslide__tags"><span class="tag">iOS</span><span class="tag">Android</span><span class="tag">Flutter</span><span class="tag">App Store Launch</span></div>
+          </article>
+          <article class="sslide" data-i="2">
+            <h3>E-Commerce Solutions</h3>
+            <p>Fast, conversion-focused online stores with secure payments, smart catalogs and smooth checkout.</p>
+            <div class="sslide__tags"><span class="tag">Online Stores</span><span class="tag">Payments</span><span class="tag">Catalog</span><span class="tag">Conversion</span></div>
+          </article>
+          <article class="sslide" data-i="3">
+            <h3>Custom Software</h3>
+            <p>Tailor-made systems and platforms that streamline operations and scale with your business.</p>
+            <div class="sslide__tags"><span class="tag">Web Platforms</span><span class="tag">Dashboards</span><span class="tag">Integrations</span><span class="tag">APIs</span></div>
+          </article>
+          <article class="sslide" data-i="4">
+            <h3>Branding &amp; Identity</h3>
+            <p>Memorable brand systems, from logo and tone of voice to guidelines that keep every touchpoint consistent.</p>
+            <div class="sslide__tags"><span class="tag">Logo</span><span class="tag">Brand Guidelines</span><span class="tag">Messaging</span><span class="tag">Collateral</span></div>
+          </article>
+          <article class="sslide" data-i="5">
+            <h3>Digital Marketing</h3>
+            <p>Data-driven campaigns, SEO and content that bring the right audience to your product.</p>
+            <div class="sslide__tags"><span class="tag">SEO</span><span class="tag">Social Media</span><span class="tag">Paid Ads</span><span class="tag">Analytics</span></div>
+          </article>
+        </div>
+
+        <div class="services__art" aria-hidden="true">
+          <img decoding="async" id="servicesArt" src="assets/img/service-illustration.webp" alt="">
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <!-- =============== Our story =============== -->
+    <section class="story" aria-labelledby="storyTitle">
+      <div class="story__text">
+        <span class="pill pill--grey" data-reveal>Our story</span>
+        <h2 class="title story__title" id="storyTitle" data-reveal style="--d:.08s">We build trust through a <strong>clear vision</strong> and <strong>a strong message</strong></h2>
+        <div class="lead-row story__lead" data-reveal style="--d:.16s">
+          <p>Qeema Tech is your digital partner for success, leveraging extensive experience to deliver balanced tech solutions that combine quality, development, and a true understanding of market needs.</p>
+        </div>
+        <ul class="story__mv">
+          <li data-reveal style="--d:.2s">
+            <img decoding="async" src="assets/svg/mission.svg" alt="" width="93" height="93">
+            <div><h3>Our Mission</h3><p>Our goal is to build a long-term relationship with our clients by providing reliable services and tangible results that help them grow and continuously strengthen their digital presence.</p></div>
+          </li>
+          <li data-reveal style="--d:.3s">
+            <img decoding="async" src="assets/svg/vision.svg" alt="" width="93" height="93">
+            <div><h3>Our Vision</h3><p>Our vision is to provide advanced technology services that enhance the value of our clients' businesses, with continuous development of our capabilities and resources to achieve the highest level of quality and innovation.</p></div>
+          </li>
+        </ul>
+      </div>
+      <img decoding="async" class="story__art" src="assets/svg/story-qt.svg" alt="Qeematech logo with a chess rook" width="476" height="392" data-reveal="right">
+    </section>
+
+    <!-- =============== Why Qeematech =============== -->
+    <section class="why" aria-labelledby="whyTitle">
+      <div class="why__head">
+        <span class="pill pill--grey" data-reveal>Why Qeematech</span>
+        <h2 class="title" id="whyTitle" data-reveal style="--d:.08s">We give your project a <strong>stronger foundation</strong> for success</h2>
+      </div>
+      <ul class="why__grid">
+        <li class="why__card" data-reveal>
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Software Experts</h3>
+          <p>Practical experience in developing websites, systems, and applications to ensure professional, scalable implementation.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.1s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Real Protection</h3>
+          <p>We apply best core practices in security and stability to enhance the safety of your digital project from the start.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.2s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Ideas and Solutions</h3>
+          <p>We don’t just execute; we help you choose the right solution to achieve the best results for your business.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.3s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Technical Support</h3>
+          <p>Ongoing technical follow-up to help you maintain the quality of your site or app and quickly address any feedback.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- =============== Clients =============== -->
+    <section class="clients" id="clients" aria-labelledby="clientsTitle">
+      <div class="clients__inner">
+        <div class="clients__head" data-reveal="left">
+          <span class="pill">Our Clients</span>
+          <h2 class="title" id="clientsTitle">Trusted by <strong>world-<br>leading</strong> enterprises</h2>
+        </div>
+        <div class="clients__logos" aria-label="Client logos" data-reveal="zoom">
+          <div class="marquee marquee--l" style="--speed:38s">
+            <ul class="marquee__track">
+              <li><img decoding="async" src="assets/svg/logo-shutterframe-1.svg" alt="" style="width:179px"></li>
+              <li><img decoding="async" src="assets/svg/logo-convergence.svg" alt="" style="width:174px"></li>
+              <li><img decoding="async" src="assets/svg/logo-w.svg" alt="" style="width:137px"></li>
+            </ul>
+          </div>
+          <div class="marquee marquee--r" style="--speed:44s">
+            <ul class="marquee__track">
+              <li><img decoding="async" src="assets/svg/logo-ikigai.svg" alt="" style="width:164px"></li>
+              <li><img decoding="async" src="assets/svg/logo-coreos.svg" alt="" style="width:121px"></li>
+              <li><img decoding="async" src="assets/svg/logo-shutterframe-2.svg" alt="" style="width:167px"></li>
+            </ul>
+          </div>
+          <div class="marquee marquee--l" style="--speed:50s">
+            <ul class="marquee__track">
+              <li><img decoding="async" src="assets/svg/logo-shutterframe-1.svg" alt="" style="width:179px"></li>
+              <li><img decoding="async" src="assets/svg/logo-layers-a.svg" alt="" style="width:109px"></li>
+              <li><img decoding="async" src="assets/svg/logo-layers-b.svg" alt="" style="width:170px"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <!-- home.js also drives the shared services wheel and client marquee; its other blocks skip themselves when their markup is missing -->
+  <script src="js/home.js"></script>
+</body>
+</html>
