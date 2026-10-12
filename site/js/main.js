@@ -130,7 +130,7 @@
     var pauseIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { e.target.classList.toggle('is-paused', !e.isIntersecting); });
     }, { rootMargin: '120px 0px' });
-    document.querySelectorAll('.hero, .clients, .testi, .story, .proj-hero, .about-hero, .inner-glow, .services__panel, .page-head, .site-footer')
+    document.querySelectorAll('.hero, .clients, .testi, .story, .proj-hero, .about-hero, .inner-glow, .services__panel, .page-head, .sd-hero, .svc-hero, .site-footer')
       .forEach(function (s) { pauseIO.observe(s); });
   }
 

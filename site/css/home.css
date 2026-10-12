@@ -447,3 +447,7 @@
   .fan { height: 350px; }
   .tcard { transform: translate(calc(var(--dx) * 0.2), calc(var(--dy) * 0.5)) rotate(var(--r)) scale(0.7); }
 }
+
+/* service titles in the wheel link to their pages */
+.sslide h3 a { color: inherit; background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat; transition: background-size 0.5s var(--ease-out), color var(--t-fast); }
+.sslide h3 a:hover { color: var(--c-blue); background-size: 100% 2px; }

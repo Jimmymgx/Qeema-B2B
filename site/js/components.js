@@ -1,7 +1,7 @@
 /* ==========================================================================
    components.js — one template for the site header and footer.
    Put <div data-include="header"></div> / <div data-include="footer"></div>
-   in a page and set <body data-page="home|about|work|book"> so the right
+   in a page and set <body data-page="home|about|services|work|book"> so the right
    nav link is highlighted. Plain JS strings (no fetch), so pages still work
    when opened by double-click (file://). Must load BEFORE main.js.
    ========================================================================== */
@@ -17,7 +17,7 @@
     '    <nav class="site-nav" id="siteNav" aria-label="Main">',
     '      <a href="index.html"' + cur('home') + '>Home</a>',
     '      <a href="about.html"' + cur('about') + '>About Us</a>',
-    '      <a href="index.html#services">Services</a>',
+    '      <a href="services.html"' + cur('services') + '>Services</a>',
     '      <a href="our-work.html"' + cur('work') + '>Our Work</a>',
     '    </nav>',
     '    <a class="btn site-header__cta" href="book-a-call.html">Book a call</a>',
@@ -50,7 +50,7 @@
     '      </div>',
     '      <div class="site-footer__col">',
     '        <h3>Important Links</h3>',
-    '        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="index.html#services">Our Services</a></li><li><a href="book-a-call.html">Contact Us</a></li></ul>',
+    '        <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Our Services</a></li><li><a href="book-a-call.html">Contact Us</a></li></ul>',
     '      </div>',
     '      <div class="site-footer__col site-footer__col--addr">',
     '        <h3>Address</h3>',

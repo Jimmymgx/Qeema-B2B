@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Qeematech</title>
+  <meta name="description" content="End-to-end digital services from Qeematech: websites, mobile apps, e-commerce, custom software, branding and marketing.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300,0,1&family=Inter:wght@400;500&family=Roboto:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/glow.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/inner.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body class="page-services" data-page="services">
+
+  <div data-include="header"></div>
+
+  <main class="inner inner--svc">
+    <div class="inner-glow" aria-hidden="true">
+      <div class="inner-glow__stage">
+        <div class="glow-field glow-field--full"></div>
+        <div class="glow-drift"></div>
+        <span class="inner-glow__vline inner-glow__vline--l"></span>
+        <span class="inner-glow__vline inner-glow__vline--r"></span>
+      </div>
+    </div>
+
+    <!-- =============== Hero =============== -->
+    <section class="svc-hero" aria-labelledby="svcTitle">
+      <div class="svc-hero__row">
+        <div class="svc-hero__copy">
+          <nav class="crumb rise-in" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Services</li></ol></nav>
+          <h1 class="svc-hero__title rise-in" id="svcTitle" style="--d:.1s">Services Built <strong>for Growth.</strong></h1>
+          <div class="svc-hero__promise rise-in" style="--d:.25s"><p>We create end-to-end digital solutions that help businesses build stronger products, improve operations, and grow with confidence.</p></div>
+          <div class="svc-hero__actions rise-in" style="--d:.4s">
+            <a class="btn" href="book-a-call.html">Order your project</a>
+            <a class="btn btn--outline" href="#services"><span>Explore our services</span></a>
+          </div>
+        </div>
+        <div class="svc-hero__art rise-in" style="--d:.2s" aria-hidden="true">
+          <img decoding="async" class="svc-hero__orbit--a" src="assets/svg/orbit-a.svg" alt="" width="620" height="118">
+          <img decoding="async" class="svc-hero__orbit--b" src="assets/svg/orbit-b.svg" alt="" width="550" height="115">
+          <span class="svc-hero__shadow"></span>
+          <div class="svc-hero__sculpt" id="sculpt"><img fetchpriority="high" decoding="async" src="assets/img/growth-sculpture.webp" alt="" width="600" height="510"></div>
+          <span class="svc-hero__cap">STRATEGY × DESIGN × TECHNOLOGY</span>
+        </div>
+      </div>
+      <div class="svc-strip rise-in" style="--d:.5s">
+        <p>From the first idea to what comes next.</p>
+        <p>Websites &nbsp;/&nbsp; Mobile apps &nbsp;/&nbsp; E-Commerce &nbsp;/&nbsp; SEO &nbsp;/&nbsp; Custom software</p>
+      </div>
+    </section>
+
+    <!-- =============== Services =============== -->
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="services__head">
+        <div class="services__head-left" data-reveal="left">
+          <span class="pill pill--grey">Our services</span>
+          <h2 class="title" id="servicesTitle">Services Built <strong>for Growth</strong></h2>
+        </div>
+        <div class="lead-row services__lead" data-reveal="right">
+          <p class="lead">We create end-to-end digital solutions that help businesses build stronger products, improve operations, and grow with confidence.</p>
+        </div>
+      </div>
+
+      <!-- Track = scroll runway. The panel stays pinned while you scroll through the 6 services, then releases. -->
+      <div class="services__track" id="servicesTrack">
+      <div class="services__panel" id="servicesPanel" data-active="0">
+        <div class="wheel">
+          <div class="wheel__ring" aria-hidden="true"></div>
+          <ol class="wheel__list" id="wheelList">
+            <li class="wheel__item" data-i="0"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">01</span></button></li>
+            <li class="wheel__item" data-i="1"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">02</span></button></li>
+            <li class="wheel__item" data-i="2"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">03</span></button></li>
+            <li class="wheel__item" data-i="3"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">04</span></button></li>
+            <li class="wheel__item" data-i="4"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">05</span></button></li>
+            <li class="wheel__item" data-i="5"><button type="button"><span class="wheel__dot"></span><span class="wheel__num">06</span></button></li>
+          </ol>
+        </div>
+
+        <!-- slide copy: 01 is from the Figma design; 02-06 are placeholder copy to edit -->
+        <div class="services__slides" aria-live="polite">
+          <article class="sslide is-active" data-i="0">
+            <h3><a href="website-design-development.html">Website Design &amp; Development</a></h3>
+            <p>We design and develop modern, responsive websites that combine strong visual identity with seamless user experiences.</p>
+            <div class="sslide__tags"><span class="tag">UI Design</span><span class="tag">UX Design</span><span class="tag">Corporate Websites</span><span class="tag">Responsive</span></div>
+          </article>
+          <article class="sslide" data-i="1">
+            <h3><a href="mobile-app-development.html">Mobile App Development</a></h3>
+            <p>Native and cross-platform apps built for performance, polish and growth on iOS and Android.</p>
+            <div class="sslide__tags"><span class="tag">iOS</span><span class="tag">Android</span><span class="tag">Flutter</span><span class="tag">App Store Launch</span></div>
+          </article>
+          <article class="sslide" data-i="2">
+            <h3><a href="e-commerce-solutions.html">E-Commerce Solutions</a></h3>
+            <p>Fast, conversion-focused online stores with secure payments, smart catalogs and smooth checkout.</p>
+            <div class="sslide__tags"><span class="tag">Online Stores</span><span class="tag">Payments</span><span class="tag">Catalog</span><span class="tag">Conversion</span></div>
+          </article>
+          <article class="sslide" data-i="3">
+            <h3><a href="custom-software.html">Custom Software</a></h3>
+            <p>Tailor-made systems and platforms that streamline operations and scale with your business.</p>
+            <div class="sslide__tags"><span class="tag">Web Platforms</span><span class="tag">Dashboards</span><span class="tag">Integrations</span><span class="tag">APIs</span></div>
+          </article>
+          <article class="sslide" data-i="4">
+            <h3><a href="branding-identity.html">Branding &amp; Identity</a></h3>
+            <p>Memorable brand systems, from logo and tone of voice to guidelines that keep every touchpoint consistent.</p>
+            <div class="sslide__tags"><span class="tag">Logo</span><span class="tag">Brand Guidelines</span><span class="tag">Messaging</span><span class="tag">Collateral</span></div>
+          </article>
+          <article class="sslide" data-i="5">
+            <h3><a href="digital-marketing.html">Digital Marketing</a></h3>
+            <p>Data-driven campaigns, SEO and content that bring the right audience to your product.</p>
+            <div class="sslide__tags"><span class="tag">SEO</span><span class="tag">Social Media</span><span class="tag">Paid Ads</span><span class="tag">Analytics</span></div>
+          </article>
+        </div>
+
+        <div class="services__art" aria-hidden="true">
+          <img decoding="async" id="servicesArt" src="assets/img/service-illustration.webp" alt="">
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- =============== Capabilities =============== -->
+    <section class="svc-grid" aria-label="All services">
+      <article class="svc-card" data-reveal>
+        <p class="svc-card__label">01 / Website Design &amp; Development</p>
+        <h3>Website Design &amp; Development</h3>
+        <p>We design and develop modern, responsive websites that combine strong visual identity with seamless user experiences.</p>
+        <div class="svc-card__tags"><span class="tag">UI Design</span><span class="tag">UX Design</span><span class="tag">Corporate Websites</span><span class="tag">Responsive</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="website-design-development.html"><span>Show more details</span></a></div>
+      </article>
+      <article class="svc-card" data-reveal style="--d:.1s">
+        <p class="svc-card__label">02 / DIGITAL SOLUTIONS</p>
+        <h3>Mobile App Development</h3>
+        <p>We build high-performance mobile applications designed to deliver smooth, scalable experiences across iOS and Android.</p>
+        <div class="svc-card__tags"><span class="tag">iOS &amp; Android</span><span class="tag">Flutter</span><span class="tag">React Native</span><span class="tag">UI/UX</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="mobile-app-development.html"><span>Show more details</span></a></div>
+      </article>
+      <article class="svc-card" data-reveal>
+        <p class="svc-card__label">03 / DIGITAL SOLUTIONS</p>
+        <h3>E-Commerce Design &amp; Development</h3>
+        <p>We create conversion-focused online stores that make browsing, purchasing, and managing products simple and effective.</p>
+        <div class="svc-card__tags"><span class="tag">WooCommerce</span><span class="tag">Shopify</span><span class="tag">Checkout</span><span class="tag">Conversion</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="e-commerce-solutions.html"><span>Show more details</span></a></div>
+      </article>
+      <article class="svc-card" data-reveal style="--d:.1s">
+        <p class="svc-card__label">04 / DIGITAL SOLUTIONS</p>
+        <h3>Custom Software</h3>
+        <p>Tailor-made systems and platforms that streamline operations and scale with your business.</p>
+        <div class="svc-card__tags"><span class="tag">Web Platforms</span><span class="tag">Dashboards</span><span class="tag">Integrations</span><span class="tag">APIs</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="custom-software.html"><span>Show more details</span></a></div>
+      </article>
+      <article class="svc-card" data-reveal>
+        <p class="svc-card__label">05 / BRAND</p>
+        <h3>Branding &amp; Identity</h3>
+        <p>Memorable brand systems, from logo and tone of voice to guidelines that keep every touchpoint consistent.</p>
+        <div class="svc-card__tags"><span class="tag">Logo</span><span class="tag">Brand Guidelines</span><span class="tag">Messaging</span><span class="tag">Collateral</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="branding-identity.html"><span>Show more details</span></a></div>
+      </article>
+      <article class="svc-card" data-reveal style="--d:.1s">
+        <p class="svc-card__label">06 / GROWTH</p>
+        <h3>Digital Marketing</h3>
+        <p>Data-driven campaigns, SEO and content that bring the right audience to your product.</p>
+        <div class="svc-card__tags"><span class="tag">SEO</span><span class="tag">Social Media</span><span class="tag">Paid Ads</span><span class="tag">Analytics</span></div>
+        <div class="svc-card__actions"><a class="btn" href="book-a-call.html">Discuss your project</a><a class="btn btn--outline" href="digital-marketing.html"><span>Show more details</span></a></div>
+      </article>
+    </section>
+
+    <!-- =============== Why Qeematech =============== -->
+    <section class="why" aria-labelledby="whyTitle">
+      <div class="why__head">
+        <span class="pill pill--grey" data-reveal>Why Qeematech</span>
+        <h2 class="title" id="whyTitle" data-reveal style="--d:.08s">We give your project a <strong>stronger foundation</strong> for success</h2>
+      </div>
+      <ul class="why__grid">
+        <li class="why__card" data-reveal>
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Software Experts</h3>
+          <p>Practical experience in developing websites, systems, and applications to ensure professional, scalable implementation.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.1s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Real Protection</h3>
+          <p>We apply best core practices in security and stability to enhance the safety of your digital project from the start.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.2s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Ideas and Solutions</h3>
+          <p>We don’t just execute; we help you choose the right solution to achieve the best results for your business.</p>
+        </li>
+        <li class="why__card" data-reveal style="--d:.3s">
+          <span class="why__icon"><img decoding="async" src="assets/img/why-icon.png" alt="" width="36" height="36"></span>
+          <h3>Technical Support</h3>
+          <p>Ongoing technical follow-up to help you maintain the quality of your site or app and quickly address any feedback.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- =============== Our work =============== -->
+    <section class="svc-work" aria-labelledby="svcWorkTitle">
+      <div class="work__head">
+        <span class="pill pill--soft" data-reveal>Our Work</span>
+        <h2 class="title" id="svcWorkTitle" data-reveal style="--d:.08s">Projects That Turn Ideas Into <strong>Impact</strong></h2>
+        <p class="lead work__lead" data-reveal style="--d:.16s">A selection of digital products, platforms, and experiences we’ve built for ambitious businesses across different industries.</p>
+      </div>
+      <div class="work__grid">
+        <article class="pcard" data-reveal>
+          <a class="pcard__shot" href="project.html"><img decoding="async" src="assets/img/project-screenshot.webp" alt="" loading="lazy" width="411" height="280"></a>
+          <h3>Rivermark</h3>
+          <p>High-performance websites and platforms built to deliver seamless digital experiences.</p>
+          <a class="pcard__link" href="project.html"><span>View Project</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-reveal style="--d:.1s">
+          <a class="pcard__shot" href="project.html?device=laptop"><img decoding="async" src="assets/img/project-screenshot1.webp" alt="" loading="lazy" width="411" height="280"></a>
+          <h3>Rivermark</h3>
+          <p>High-performance websites and platforms built to deliver seamless digital experiences.</p>
+          <a class="pcard__link" href="project.html?device=laptop"><span>View Project</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+        <article class="pcard" data-reveal style="--d:.2s">
+          <a class="pcard__shot" href="project.html"><img decoding="async" src="assets/img/project-screenshot2.webp" alt="" loading="lazy" width="411" height="280"></a>
+          <h3>Rivermark</h3>
+          <p>High-performance websites and platforms built to deliver seamless digital experiences.</p>
+          <a class="pcard__link" href="project.html"><span>View Project</span><img decoding="async" src="assets/svg/arrow-right.svg" alt=""></a>
+        </article>
+      </div>
+      <a class="btn work__more" href="our-work.html" data-reveal>See more</a>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <!-- home.js drives the services wheel; its other blocks skip themselves when their markup is missing -->
+  <script src="js/home.js"></script>
+  <!-- 3D hero sculpture: Three.js (classic build works from file://); the static image stays as fallback -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/sculpture.js" defer></script>
+</body>
+</html>
