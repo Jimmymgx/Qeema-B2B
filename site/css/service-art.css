@@ -94,3 +94,13 @@
   .sd-chip, .sd-tile, .sd-chart, .sd-swatches, .sd-dash__bars i, .sd-chart__bars i { animation: none; }
   .sd-dash__line polyline, .sd-chart__line polyline { animation: none; stroke-dashoffset: 0; }
 }
+
+/* ---------- service-page hero tags: soft translucent pills ---------- */
+.sd-hero .svc-card__tags { gap: 10px; }
+.sd-hero .svc-card__tags .tag {
+  padding: 8px 18px; font-size: 16px; font-weight: 400; color: #585858;
+  background: rgba(255, 255, 255, 0.55); border: 1px solid rgba(214, 220, 234, 0.9);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: background var(--t-fast), transform 0.4s var(--ease-out), border-color var(--t-fast);
+}
+.sd-hero .svc-card__tags .tag:hover { background: rgba(255, 255, 255, 0.9); border-color: rgba(12, 90, 219, 0.35); transform: translateY(-2px); }

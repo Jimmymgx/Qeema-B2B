@@ -170,18 +170,19 @@
   position: absolute; left: 51.7px; top: 51.7px; width: 187.44px; height: 187.44px;
   border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 0.8px rgba(255, 255, 255, 0.1);
 }
-.tcard__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; max-width: none; transition: transform 1s var(--ease-out); }
+.tcard__photo img { position: absolute; inset: auto; left: -32.5%; top: -32.5%; width: 165%; height: 165%; object-fit: cover; max-width: none; transition: transform 1s var(--ease-out); }
+.tcard--1 .tcard__photo img { top: -29%; }
+.tcard--2 .tcard__photo img { top: -23%; }
 .tcard__photo .tcard__photo-img--crop { inset: auto; width: 202.85%; height: 135.22%; left: -50.89%; top: -17.8%; object-fit: fill; }
 .tcard:hover .tcard__photo img:not(.tcard__photo-img--crop) { transform: scale(1.08); }
 .tcard__body { position: absolute; left: 35.54px; right: 35.54px; top: 255.3px; height: 159px; text-align: center; color: #fff; }
-.tcard__body blockquote {
-  position: absolute; left: 0; right: 0; top: 19.4px;
-  font-family: var(--f-serif); font-weight: 300; font-size: 19.39px; line-height: 22.62px; letter-spacing: -0.78px;
-  font-variation-settings: "SOFT" 0, "WONK" 1; text-wrap: balance;
+.tcard__title {
+  position: absolute; left: 0; right: 0; top: 6px;
+  font-family: var(--f-serif); font-weight: 300; font-size: 21px; line-height: 26px; letter-spacing: -0.8px;
+  font-variation-settings: "SOFT" 0, "WONK" 1; white-space: nowrap;
 }
-.tcard__body hr { position: absolute; left: 0; right: 0; top: 103.4px; height: 0.8px; margin: 0; border: 0; background: rgba(255, 255, 255, 0.1); }
-.tcard__name { position: absolute; left: 0; right: 0; top: 120.4px; font-family: var(--f-ui); font-weight: 500; font-size: 12.93px; line-height: 19.39px; letter-spacing: -0.26px; }
-.tcard__role { position: absolute; left: 0; right: 0; top: 142.6px; font-family: var(--f-ui); font-size: 11.31px; line-height: 16.16px; letter-spacing: -0.23px; color: rgba(255, 255, 255, 0.64); }
+.tcard__body hr { position: absolute; left: 0; right: 0; top: 46px; height: 0.8px; margin: 0; border: 0; background: rgba(255, 255, 255, 0.16); }
+.tcard__desc { position: absolute; left: 0; right: 0; top: 60px; font-family: var(--f-ui); font-size: 12.6px; line-height: 18px; letter-spacing: -0.1px; color: rgba(255, 255, 255, 0.78); text-wrap: balance; }
 
 /* statement */
 .hero__statement { position: absolute; left: 748px; top: 1058px; width: 612px; height: 363px; z-index: 2; }
