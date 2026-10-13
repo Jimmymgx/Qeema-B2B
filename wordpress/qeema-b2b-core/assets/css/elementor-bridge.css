@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Elementor bridge: lets the static design's CSS live inside Elementor's
+   containers / widget wrappers without Elementor's default spacing, and keeps
+   everything visible and editable inside the editor canvas.
+   ========================================================================== */
+.qb-site { margin: 0; }
+
+/* Elementor adds gaps/padding of its own: the design already has its own spacing */
+.qb-site .e-con { --gap: 0px; --row-gap: 0px; --column-gap: 0px; --padding-top: 0px; --padding-right: 0px; --padding-bottom: 0px; --padding-left: 0px; }
+.qb-site .elementor-widget:not(:last-child) { margin-block-end: 0; }
+.qb-site .elementor-widget[class*="elementor-widget-qb-"] > .elementor-widget-container { width: 100%; }
+.qb-site .elementor-widget[class*="elementor-widget-qb-"] { width: 100%; max-width: 100%; }
+
+/* page wrapper used by every seeded page */
+.qb-page { position: relative; width: 100%; overflow: visible; }
+.qb-page.qb-clip { overflow: hidden; overflow: clip; }
+
+/* the ambient glow is positioned against the page wrapper, not its own widget box */
+.qb-site .elementor-widget-qb-glow { position: absolute !important; top: 0; left: 0; right: 0; width: 100% !important; z-index: 0; pointer-events: none; bottom: 0; }
+.qb-site .elementor-widget-qb-glow > .elementor-widget-container { position: static; }
+
+/* theme main wrapper */
+.qb-main { position: relative; display: block; }
+.qb-main.inner { overflow: hidden; overflow: clip; }
+
+/* extra inline formatting from the Elementor text toolbar behaves like <strong> in titles */
+.title b, .title .qb-em { font-weight: 700; color: var(--c-blue); }
+
+/* ---------- Elementor editor canvas ---------- */
+.qb-editing [data-reveal],
+.qb-editing .js [data-reveal] { opacity: 1 !important; translate: none !important; transform: none !important; }
+.qb-editing .pcard .pcard__shot,
+.qb-editing .js .pcard[data-reveal] .pcard__shot { clip-path: none !important; }
+.qb-editing .rise-in { animation: none !important; opacity: 1 !important; translate: none !important; }
+.qb-editing .site-header { position: relative; }
+.qb-editing .scroll-progress { display: none; }
+.qb-editing .elementor-inline-editing { outline: none; }
+
+/* wheel section is a normal (un-pinned) block while editing */
+.services--flat .services__track { height: auto; }
+.services--flat .services__panel { position: relative; height: auto; min-height: var(--ph); }
+
+.site-logo--img { height: auto; }
+.site-logo__img { display: block; width: 100%; height: auto; max-height: 120px; object-fit: contain; }
+.site-footer__logo--img { background: none; height: auto; }
+.site-footer__logo-img { display: block; width: 100%; height: auto; object-fit: contain; }
+.site-header.is-scrolled .site-logo--img { transform-origin: left center; }
+
+/* contact form error box */
+.book-form__error { margin: 18px 0 0; text-align: center; color: #c0262d; font-size: 15px; }
+.book-form__error[hidden] { display: none; }
+.qb-hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
+
+/* the design pads the bottom of some pages; keep that padding INSIDE the page wrapper so the background reaches it */
+.qb-main.inner--book { padding-bottom: 0; }
+.qb-main.inner--book .qb-page { padding-bottom: 100px; }
+.qb-main.inner--about { padding-bottom: 0; }
+.qb-main.inner--about .qb-page { padding-bottom: 80px; }
+@media (max-width: 899px) { .qb-main.inner--book .qb-page { padding-bottom: 64px; } }

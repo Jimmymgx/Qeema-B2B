@@ -1,0 +1,85 @@
+/* ==========================================================================
+   About Us (reuses the Home services wheel + client marquee via home.css)
+   ========================================================================== */
+.inner--about { padding-bottom: 80px; }
+.inner-glow--tall { height: 1900px; -webkit-mask-image: linear-gradient(#000 55%, transparent 100%); mask-image: linear-gradient(#000 55%, transparent 100%); }
+.inner--about .inner-glow__vline { height: 856px; }
+.inner--about .services__panel { background: transparent; }
+.inner--about .clients { padding-top: 80px; }
+
+/* hero */
+.about-hero {
+  position: relative; z-index: 1; width: min(100% - var(--gutter) * 2, 1281px); margin-inline: auto; padding-top: 132px;
+  display: flex; flex-direction: column; align-items: center; gap: 32px;
+}
+.about-hero__title { font-size: 48px; line-height: 72px; font-weight: 300; text-align: center; color: var(--c-ink); margin-bottom: -32px; }
+.about-hero__box {
+  position: relative; overflow: hidden; width: 401px; max-width: 100%; height: 70px; border-radius: 15.29px; background: rgba(0, 36, 126, 0.06);
+  font-size: 32px; line-height: 70px; text-align: center; color: var(--c-navy); text-transform: capitalize;
+}
+.about-hero__box::after {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+  transform: translateX(-120%); animation: sweep 3.6s ease-in-out 1.4s infinite;
+}
+.about-hero__cols { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 24px; }
+.about-hero__p { width: 612px; max-width: 100%; font-size: 16px; line-height: 1.2; color: var(--c-muted); }
+.about-hero__p--rtl { text-align: right; }
+.about-hero__divider { flex: none; width: 1px; height: 83px; background: var(--c-muted); border-radius: 1px; }
+.about-hero__photos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; width: 100%; }
+.about-hero__photos li { height: 129px; overflow: hidden; border-radius: 20px 20px 20px 0; background: #dfe7f5; }
+.about-hero__photos img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease-out); }
+.about-hero__photos li:hover img { transform: scale(1.08); }
+
+/* our story */
+.story { width: min(100% - var(--gutter) * 2, 1280px); margin: 80px auto 0; display: flex; align-items: flex-end; justify-content: space-between; position: relative; z-index: 1; }
+.story__text { flex: 0 1 790px; min-width: 0; max-width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.story__text > .pill { margin-bottom: -6px; }
+.story__title { width: 948px; max-width: none; line-height: normal; position: relative; z-index: 2; }
+.story__lead { gap: 24px; align-items: center; }
+.story__lead p { flex: 1; font-size: 18px; line-height: 27px; color: var(--c-muted-2); }
+.story__mv { display: flex; flex-direction: column; gap: 28px; width: 640px; max-width: 100%; }
+.story__mv li { display: flex; align-items: center; gap: 14px; }
+.story__mv img { flex: none; width: 93px; height: 93px; transition: transform 0.6s var(--ease-out); }
+.story__mv li:hover img { transform: scale(1.1) rotate(-6deg); }
+.story__mv h3 { font-size: 24px; line-height: 28px; font-weight: 700; color: var(--c-ink); margin-bottom: 8px; }
+.story__mv p { font-size: 16px; line-height: normal; color: var(--c-muted-2); }
+.story__art { flex: 0 0 auto; width: 476px; max-width: 42%; height: auto; aspect-ratio: 476 / 392; animation: bob 8s ease-in-out infinite; }
+
+/* why qeematech */
+.why { width: min(100% - var(--gutter) * 2, 1280px); margin: 80px auto 0; display: flex; flex-direction: column; gap: 40px; position: relative; z-index: 1; }
+.why__head { width: 789px; max-width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.why__grid { display: flex; justify-content: space-between; gap: 24px; }
+.why__card { width: 299px; display: flex; flex-direction: column; align-items: flex-start; }
+.why__icon {
+  display: grid; place-items: center; width: 96px; height: 96px; border-radius: 50%; background: rgba(255, 255, 255, 0.55); margin-bottom: 24px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s var(--ease-out);
+}
+.why__icon img { width: 36px; height: 36px; filter: drop-shadow(0 4px 1px rgba(0, 0, 0, 0.25)); transition: transform 0.6s var(--ease-out); }
+.why__card:hover .why__icon { transform: translateY(-6px); box-shadow: 0 0 0 1px rgba(12, 90, 219, 0.1), 0 18px 30px -12px rgba(0, 36, 126, 0.35); }
+.why__card:hover .why__icon img { transform: scale(1.18) rotate(8deg); }
+.why__card h3 { font-size: 32px; line-height: 44px; font-weight: 300; letter-spacing: -1.6px; color: #141414; margin-bottom: 14px; white-space: nowrap; }
+.why__card p { font-size: 16px; line-height: 24px; letter-spacing: -0.32px; color: #656565; }
+
+@media (max-width: 1100px) {
+  .story { flex-direction: column; align-items: flex-start; gap: 40px; }
+  .story__title { width: auto; }
+  .story__art { align-self: center; }
+  .why__grid { flex-wrap: wrap; row-gap: 40px; }
+  .why__card { width: calc(50% - 12px); }
+}
+@media (max-width: 899px) {
+  .about-hero { padding-top: 112px; gap: 24px; }
+  .about-hero__title { font-size: 40px; margin-bottom: -24px; }
+  .about-hero__box { font-size: 22px; height: 56px; line-height: 56px; }
+  .about-hero__cols { flex-direction: column; align-items: stretch; }
+  .about-hero__divider { width: 83px; height: 1px; }
+  .about-hero__p { width: 100%; }
+  .about-hero__photos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .story, .why { margin-top: 56px; }
+  .story__art { width: min(100%, 380px); height: auto; }
+  .story__lead p { font-size: 16px; }
+  .why__card { width: 100%; }
+  .why__card h3 { white-space: normal; font-size: 28px; }
+}

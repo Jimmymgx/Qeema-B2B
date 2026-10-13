@@ -1,0 +1,548 @@
+[
+ {
+  "slug": "website-design-development",
+  "name": "Website Design & Development",
+  "meta": "Website design and development by Qeematech: strategy, UX, responsive development, CMS, performance and launch.",
+  "intro": "We design and develop modern, responsive websites that combine strong visual identity with seamless user experiences.",
+  "tags": [
+   "UI Design",
+   "UX Design",
+   "Corporate Websites",
+   "Responsive"
+  ],
+  "strip": "A complete website, from idea to launch.",
+  "list_title": "Every detail <strong>Working together.</strong>",
+  "list_lead": "Design and development, connected from the start. Built around what your business needs.",
+  "rows": [
+   {
+    "title": "Strategy & structure",
+    "text": "We start with your goals, audience and content, then map the pages and journeys that will move visitors toward action.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "UX & interface design",
+    "text": "Clear layouts, strong typography and a consistent visual system that reflect your brand on every screen size.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "Responsive development",
+    "text": "Clean, fast front-end code that adapts smoothly from large desktops to the smallest phones.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Content management",
+    "text": "An easy-to-use CMS so your team can edit pages, publish news and manage media without a developer.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Performance & SEO",
+    "text": "Optimised images, lean code and technical SEO foundations so the site loads fast and gets found.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Accessibility & quality",
+    "text": "Tested across browsers and devices, with accessible markup, contrast and keyboard support built in.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Idea To Live.</strong>",
+  "steps": [
+   {
+    "title": "Discover",
+    "text": "We align on your goals, audience, content, and the role your website needs to play."
+   },
+   {
+    "title": "Design",
+    "text": "We turn the strategy into wireframes and a visual system, shaped together through feedback."
+   },
+   {
+    "title": "Develop",
+    "text": "We build the approved experience, connect your CMS, and test across devices and browsers."
+   },
+   {
+    "title": "Launch & hand over",
+    "text": "We prepare for go-live and give your team the knowledge to manage what comes next."
+   }
+  ],
+  "deliver_title": "Built To Launch, <strong>Ready To Evolve.</strong>",
+  "deliver_leads": [
+   "More than a finished website. You get the tools, ownership, and confidence to keep moving forward.",
+   "Your exact scope and deliverables are agreed together at the start of the project."
+  ],
+  "checks": [
+   {
+    "title": "Design files & component library",
+    "text": "Organized Figma files, responsive layouts, and reusable UI."
+   },
+   {
+    "title": "Production-ready website",
+    "text": "Tested front-end code, CMS setup, and agreed integrations."
+   },
+   {
+    "title": "Launch essentials",
+    "text": "Technical SEO, analytics setup, and a go-live checklist."
+   },
+   {
+    "title": "Documentation & handover",
+    "text": "Editing guidance, team training, and a plan for ongoing care."
+   }
+  ],
+  "art": "website",
+  "cap": "One experience. Every screen."
+ },
+ {
+  "slug": "mobile-app-development",
+  "name": "Mobile App Development",
+  "meta": "iOS and Android app development by Qeematech: product strategy, app UX, native and cross-platform builds, store launch and support.",
+  "intro": "We build high-performance mobile applications designed to deliver smooth, scalable experiences across iOS and Android.",
+  "tags": [
+   "iOS & Android",
+   "Flutter",
+   "React Native",
+   "UI/UX"
+  ],
+  "strip": "A complete app, from first sketch to store listing.",
+  "list_title": "Every screen <strong>Built to perform.</strong>",
+  "list_lead": "Product thinking, design and engineering working as one team, from the first flow to the live app.",
+  "rows": [
+   {
+    "title": "Product strategy & scope",
+    "text": "We define the audience, the core features and a realistic first release so you launch what matters most.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "App UX & interface design",
+    "text": "Intuitive flows and polished interfaces that follow iOS and Android conventions and feel natural to use.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "iOS & Android development",
+    "text": "Native or cross-platform builds with Flutter or React Native, chosen for your budget, speed and performance needs.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Backend, APIs & integrations",
+    "text": "Secure APIs, databases, push notifications, payments and third-party services connected behind the scenes.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Testing & performance",
+    "text": "Device testing, crash monitoring and performance tuning so the app stays fast and stable as it grows.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Store launch & support",
+    "text": "Store assets, review submission and release management, followed by updates and ongoing technical support.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Idea To App Store.</strong>",
+  "steps": [
+   {
+    "title": "Discover",
+    "text": "We clarify the problem, the users and the must-have features, then agree a scope for the first release."
+   },
+   {
+    "title": "Design",
+    "text": "We prototype the key flows and shape the interface until it is clear, fast and easy to use."
+   },
+   {
+    "title": "Build",
+    "text": "We develop the app and its backend in short cycles, so you can review working builds along the way."
+   },
+   {
+    "title": "Launch & grow",
+    "text": "We handle store submission, release and monitoring, then keep improving based on real usage."
+   }
+  ],
+  "deliver_title": "Built To Ship, <strong>Ready To Scale.</strong>",
+  "deliver_leads": [
+   "More than a working build. You get a product that is ready for real users and ready for the next release.",
+   "Features, platforms and timelines are agreed together at the start of the project."
+  ],
+  "checks": [
+   {
+    "title": "Interactive prototype & design files",
+    "text": "Clickable flows and organised design assets for every screen."
+   },
+   {
+    "title": "iOS and Android apps",
+    "text": "Tested builds ready for submission, with source code ownership."
+   },
+   {
+    "title": "Backend & admin tools",
+    "text": "APIs, database and an admin panel to manage content and users."
+   },
+   {
+    "title": "Store launch & handover",
+    "text": "Store listings, release notes, documentation and a plan for updates."
+   }
+  ],
+  "art": "mobile",
+  "cap": "Native feel. Every device."
+ },
+ {
+  "slug": "e-commerce-solutions",
+  "name": "E-Commerce Solutions",
+  "meta": "E-commerce design and development by Qeematech: online stores, secure payments, product catalogs, checkout and conversion optimisation.",
+  "intro": "We create conversion-focused online stores that make browsing, purchasing, and managing products simple and effective.",
+  "tags": [
+   "WooCommerce",
+   "Shopify",
+   "Checkout",
+   "Conversion"
+  ],
+  "strip": "A complete store, from first product to first order.",
+  "list_title": "Every step <strong>Built to convert.</strong>",
+  "list_lead": "From the shelf to the checkout, every part of the store is designed to help customers buy with confidence.",
+  "rows": [
+   {
+    "title": "Store strategy & structure",
+    "text": "We plan categories, navigation and the buying journey around how your customers actually shop.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Catalog & product experience",
+    "text": "Clear product pages, filters, search and variants that make choosing quick and easy.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "Checkout & payments",
+    "text": "A short, secure checkout with the local and international payment methods your customers expect.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Platform development",
+    "text": "WooCommerce, Shopify or a custom build, selected and configured for your products and growth plans.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Speed, SEO & conversion",
+    "text": "Fast pages, search-friendly structure and conversion tuning to turn more visitors into buyers.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Orders, shipping & operations",
+    "text": "Order management, inventory, shipping rules and reporting that keep daily operations running smoothly.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Catalog To Checkout.</strong>",
+  "steps": [
+   {
+    "title": "Plan",
+    "text": "We review your products, customers and sales channels, then define the store structure and key features."
+   },
+   {
+    "title": "Design",
+    "text": "We design the storefront, product pages and checkout to feel on-brand and be effortless to use."
+   },
+   {
+    "title": "Build",
+    "text": "We develop the store, connect payments, shipping and inventory, and load your products."
+   },
+   {
+    "title": "Launch & optimise",
+    "text": "We go live, track the numbers and keep improving speed, journeys and conversion."
+   }
+  ],
+  "deliver_title": "Built To Sell, <strong>Ready To Grow.</strong>",
+  "deliver_leads": [
+   "More than a store that looks good. You get a sales channel you can manage and expand yourself.",
+   "Platform, payment methods and integrations are agreed together at the start of the project."
+  ],
+  "checks": [
+   {
+    "title": "Store design & theme",
+    "text": "A branded, responsive storefront and reusable page templates."
+   },
+   {
+    "title": "Payments, shipping & taxes",
+    "text": "Configured payment gateways, delivery rules and tax settings."
+   },
+   {
+    "title": "Product & data setup",
+    "text": "Catalog structure, product import and inventory management."
+   },
+   {
+    "title": "Training & handover",
+    "text": "Admin training, documentation and support after launch."
+   }
+  ],
+  "art": "ecommerce",
+  "cap": "Browse. Choose. Checkout."
+ },
+ {
+  "slug": "custom-software",
+  "name": "Custom Software",
+  "meta": "Custom software development by Qeematech: web platforms, dashboards, integrations and APIs built around how your business works.",
+  "intro": "Tailor-made systems and platforms that streamline operations and scale with your business.",
+  "tags": [
+   "Web Platforms",
+   "Dashboards",
+   "Integrations",
+   "APIs"
+  ],
+  "strip": "A complete system, built around how you work.",
+  "list_title": "Every process <strong>Working together.</strong>",
+  "list_lead": "We turn complex workflows into clear, reliable software that your team can trust every day.",
+  "rows": [
+   {
+    "title": "Discovery & system analysis",
+    "text": "We study your workflows, users and existing tools to define exactly what the system must do.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Architecture & data modeling",
+    "text": "A scalable foundation: clear modules, a solid database design and a stack chosen for the long term.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "Dashboards & admin panels",
+    "text": "Focused interfaces with live data, reports and role-based views that make daily work faster.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Integrations & APIs",
+    "text": "Connections to your ERP, payments, CRM, messaging and any third-party service your team relies on.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Security & access control",
+    "text": "Roles, permissions, audit trails and secure data handling to protect your business and your customers.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Deployment & ongoing support",
+    "text": "Reliable hosting, monitoring, backups and continued improvements as your needs change.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Process To Platform.</strong>",
+  "steps": [
+   {
+    "title": "Analyse",
+    "text": "We map your processes and requirements, and agree the scope and priorities with your team."
+   },
+   {
+    "title": "Architect",
+    "text": "We design the system structure, data model and interface so everything fits together from day one."
+   },
+   {
+    "title": "Build",
+    "text": "We develop in short iterations, with regular demos so the system matches how you really work."
+   },
+   {
+    "title": "Deploy & support",
+    "text": "We launch, train your users and keep the system secure, fast and up to date."
+   }
+  ],
+  "deliver_title": "Built To Work, <strong>Ready To Scale.</strong>",
+  "deliver_leads": [
+   "More than delivered code. You get a system your team understands, owns and can keep extending.",
+   "Modules, integrations and milestones are agreed together at the start of the project."
+  ],
+  "checks": [
+   {
+    "title": "Working system & source code",
+    "text": "Tested software deployed to your environment, with full code ownership."
+   },
+   {
+    "title": "Admin & reporting tools",
+    "text": "Dashboards, user management and exportable reports."
+   },
+   {
+    "title": "Integrations & API documentation",
+    "text": "Documented connections so other tools can plug in safely."
+   },
+   {
+    "title": "Training & maintenance plan",
+    "text": "User training, technical documentation and an agreed support plan."
+   }
+  ],
+  "art": "software",
+  "cap": "Complex work. Clear systems."
+ },
+ {
+  "slug": "branding-identity",
+  "name": "Branding & Identity",
+  "meta": "Branding and identity design by Qeematech: logo, visual identity, tone of voice, brand guidelines and marketing collateral.",
+  "intro": "Memorable brand systems, from logo and tone of voice to guidelines that keep every touchpoint consistent.",
+  "tags": [
+   "Logo",
+   "Brand Guidelines",
+   "Messaging",
+   "Collateral"
+  ],
+  "strip": "A complete brand, from first idea to every touchpoint.",
+  "list_title": "Every detail <strong>Telling one story.</strong>",
+  "list_lead": "Strategy, design and language working together so your brand is recognised and remembered.",
+  "rows": [
+   {
+    "title": "Brand strategy & positioning",
+    "text": "We clarify who you are, who you serve and what makes you different, so the identity has a clear purpose.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Logo & visual identity",
+    "text": "A distinctive logo and identity system designed to work across print, digital and every size.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "Colour, type & graphic language",
+    "text": "A considered palette, typography and visual elements that make your brand instantly recognisable.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Tone of voice & messaging",
+    "text": "Clear brand messaging and a consistent voice for your website, social media and sales material.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Brand guidelines",
+    "text": "A practical guide that shows your team and partners exactly how to use the brand correctly.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Collateral & digital assets",
+    "text": "Business cards, presentations, social templates and other ready-to-use assets in your new identity.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Idea To Identity.</strong>",
+  "steps": [
+   {
+    "title": "Listen",
+    "text": "We learn about your business, audience and competitors through workshops and research."
+   },
+   {
+    "title": "Define",
+    "text": "We shape the positioning, personality and message that the identity will express."
+   },
+   {
+    "title": "Design",
+    "text": "We create and refine the logo and visual system with your feedback at each stage."
+   },
+   {
+    "title": "Roll out",
+    "text": "We deliver guidelines and assets, and help you apply the brand across your channels."
+   }
+  ],
+  "deliver_title": "Built To Last, <strong>Ready To Use.</strong>",
+  "deliver_leads": [
+   "More than a logo. You get a complete system your team can apply with confidence, everywhere.",
+   "The identity scope and the list of assets are agreed together at the start of the project."
+  ],
+  "checks": [
+   {
+    "title": "Logo suite & identity files",
+    "text": "Primary and secondary logos in every format you need."
+   },
+   {
+    "title": "Brand guidelines document",
+    "text": "Colours, typography, usage rules and examples in one place."
+   },
+   {
+    "title": "Messaging & tone of voice",
+    "text": "Core messages, taglines and writing guidance."
+   },
+   {
+    "title": "Collateral & templates",
+    "text": "Stationery, presentation and social media templates, ready to use."
+   }
+  ],
+  "art": "branding",
+  "cap": "One brand. Every touchpoint."
+ },
+ {
+  "slug": "digital-marketing",
+  "name": "Digital Marketing",
+  "meta": "Digital marketing by Qeematech: SEO, social media, paid advertising, content and analytics that bring the right audience to your product.",
+  "intro": "Data-driven campaigns, SEO and content that bring the right audience to your product.",
+  "tags": [
+   "SEO",
+   "Social Media",
+   "Paid Ads",
+   "Analytics"
+  ],
+  "strip": "A complete growth plan, from audience to results.",
+  "list_title": "Every channel <strong>Working together.</strong>",
+  "list_lead": "Search, social, ads and content planned as one system, measured against the goals that matter to you.",
+  "rows": [
+   {
+    "title": "Strategy & audience research",
+    "text": "We study your market, competitors and customers, then set clear goals and the channels that will reach them.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Technical & content SEO",
+    "text": "Site fixes, keyword strategy and useful content that help you rank for what your customers search.",
+    "thumb": "project-screenshot.webp"
+   },
+   {
+    "title": "Social media management",
+    "text": "A consistent content calendar, community management and creative that builds a real following.",
+    "thumb": "project-screenshot1.webp"
+   },
+   {
+    "title": "Paid campaigns",
+    "text": "Search and social advertising set up, tested and optimised to bring qualified leads at a sensible cost.",
+    "thumb": "project-screenshot2.webp"
+   },
+   {
+    "title": "Content & creative",
+    "text": "Articles, visuals and short videos that explain your value and give people a reason to act.",
+    "thumb": "results-hand.webp"
+   },
+   {
+    "title": "Analytics & reporting",
+    "text": "Clear dashboards and monthly reports that connect marketing activity to leads and sales.",
+    "thumb": "project-screenshot1.webp"
+   }
+  ],
+  "approach_title": "A Clear Path From <strong>Audience To Results.</strong>",
+  "steps": [
+   {
+    "title": "Audit",
+    "text": "We review your website, channels and competitors to find the biggest opportunities first."
+   },
+   {
+    "title": "Plan",
+    "text": "We set goals, budgets and a channel plan, with a content and campaign calendar."
+   },
+   {
+    "title": "Launch",
+    "text": "We publish content and run campaigns, adjusting quickly based on early results."
+   },
+   {
+    "title": "Measure & improve",
+    "text": "We report on what works and keep refining to grow results month after month."
+   }
+  ],
+  "deliver_title": "Built To Perform, <strong>Ready To Compound.</strong>",
+  "deliver_leads": [
+   "More than activity. You get clear numbers, learnings and a plan that gets stronger every month.",
+   "Goals, channels and reporting are agreed together at the start of the engagement."
+  ],
+  "checks": [
+   {
+    "title": "Marketing strategy & calendar",
+    "text": "Goals, audiences, channels and a clear publishing plan."
+   },
+   {
+    "title": "SEO & campaign setup",
+    "text": "Technical fixes, keyword targets, tracking and ad account structure."
+   },
+   {
+    "title": "Content & creative assets",
+    "text": "Posts, articles, ad creatives and landing page content."
+   },
+   {
+    "title": "Reports & recommendations",
+    "text": "Monthly performance reports with the next steps to take."
+   }
+  ],
+  "art": "marketing",
+  "cap": "Reach. Engage. Grow."
+ }
+]
